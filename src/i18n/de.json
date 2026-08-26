@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "contact": "Kontakt"
+  },
+  "theme": {
+    "label": "Design",
+    "auto": "System",
+    "light": "Hell",
+    "dark": "Dunkel"
+  },
+  "hero": {
+    "tagline": "Digitale Lösungen, richtig gemacht.",
+    "subtitle": "Wir entwickeln klare, moderne digitale Produkte für Unternehmen, die schnell vorankommen wollen.",
+    "cta": "Kontakt aufnehmen"
+  },
+  "contact": {
+    "heading": "Kontaktieren Sie uns",
+    "body": "Haben Sie ein Projekt im Kopf oder eine Frage an uns? Schreiben Sie uns eine E-Mail — wir freuen uns auf Ihre Nachricht.",
+    "emailLabel": "E-Mail",
+    "cta": "E-Mail schreiben"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "agb": "AGB"
+  },
+  "legal": {
+    "back": "Zurück zur Startseite"
+  },
+  "seo": {
+    "home": {
+      "title": "Deuy Digital — Digitale Lösungen, richtig gemacht.",
+      "description": "Deuy Digital entwickelt klare, moderne digitale Produkte für Unternehmen, die schnell vorankommen wollen. Kontakt: info@deuy.digital."
+    },
+    "impressum": {
+      "title": "Impressum — Deuy Digital",
+      "description": "Impressum und Anbieterkennzeichnung der Deuy Digital UG (haftungsbeschränkt) gemäß § 5 TMG."
+    },
+    "agb": {
+      "title": "AGB — Deuy Digital",
+      "description": "Allgemeine Geschäftsbedingungen für digitale Dienstleistungen der Deuy Digital UG (haftungsbeschränkt)."
+    },
+    "datenschutz": {
+      "title": "Datenschutz — Deuy Digital",
+      "description": "Datenschutzerklärung der Deuy Digital UG (haftungsbeschränkt) gemäß Art. 13 DSGVO."
+    }
+  }
+}

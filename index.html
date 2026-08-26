@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Restores the real URL after the SPA redirect from 404.html (see
+      // public/404.html) — GitHub Pages has no server-side rewrites, so this
+      // is what lets deep links like /impressum survive a hard refresh.
+      // https://github.com/rafgraph/spa-github-pages
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      })(window.location)
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deuy Digital — Digital solutions, done right.</title>
+    <meta
+      name="description"
+      content="Deuy Digital builds clean, modern digital products for businesses that want to move fast. Get in touch: info@deuy.digital."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Deuy Digital UG (haftungsbeschränkt)" />
+    <link rel="canonical" href="https://deuy.digital/" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1b1d23" media="(prefers-color-scheme: dark)" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Deuy Digital" />
+    <meta property="og:title" content="Deuy Digital — Digital solutions, done right." />
+    <meta
+      property="og:description"
+      content="Deuy Digital builds clean, modern digital products for businesses that want to move fast."
+    />
+    <meta property="og:url" content="https://deuy.digital/" />
+    <meta property="og:image" content="https://deuy.digital/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="de_DE" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Deuy Digital — Digital solutions, done right." />
+    <meta
+      name="twitter:description"
+      content="Deuy Digital builds clean, modern digital products for businesses that want to move fast."
+    />
+    <meta name="twitter:image" content="https://deuy.digital/og-image.png" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Deuy Digital",
+        "legalName": "Deuy Digital UG (haftungsbeschränkt)",
+        "url": "https://deuy.digital",
+        "logo": "https://deuy.digital/favicon.svg",
+        "email": "info@deuy.digital",
+        "description": "Deuy Digital builds clean, modern digital products for businesses that want to move fast.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Im Wannental 23",
+          "postalCode": "74074",
+          "addressLocality": "Heilbronn",
+          "addressCountry": "DE"
+        }
+      }
+    </script>
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('deuy-theme');
+          var theme =
+            stored === 'light' || stored === 'dark'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+          document.documentElement.style.colorScheme = theme;
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

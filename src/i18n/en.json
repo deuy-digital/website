@@ -1,0 +1,49 @@
+{
+  "nav": {
+    "contact": "Contact"
+  },
+  "theme": {
+    "label": "Theme",
+    "auto": "System",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "hero": {
+    "tagline": "Digital solutions, done right.",
+    "subtitle": "We build clean, modern digital products for businesses that want to move fast.",
+    "cta": "Get in touch"
+  },
+  "contact": {
+    "heading": "Contact us",
+    "body": "Have a project in mind or a question for us? Send us an email — we'd love to hear from you.",
+    "emailLabel": "Email",
+    "cta": "Email us"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "impressum": "Imprint",
+    "datenschutz": "Privacy Policy",
+    "agb": "Terms & Conditions"
+  },
+  "legal": {
+    "back": "Back to home"
+  },
+  "seo": {
+    "home": {
+      "title": "Deuy Digital — Digital solutions, done right.",
+      "description": "Deuy Digital builds clean, modern digital products for businesses that want to move fast. Get in touch: info@deuy.digital."
+    },
+    "impressum": {
+      "title": "Imprint — Deuy Digital",
+      "description": "Legal notice and company information for Deuy Digital UG (haftungsbeschränkt)."
+    },
+    "agb": {
+      "title": "Terms & Conditions — Deuy Digital",
+      "description": "Terms and conditions for digital services provided by Deuy Digital UG (haftungsbeschränkt)."
+    },
+    "datenschutz": {
+      "title": "Privacy Policy — Deuy Digital",
+      "description": "Privacy policy (Datenschutzerklärung) for Deuy Digital UG (haftungsbeschränkt) under Art. 13 GDPR."
+    }
+  }
+}
