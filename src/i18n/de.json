@@ -23,7 +23,8 @@
     "rights": "Alle Rechte vorbehalten.",
     "impressum": "Impressum",
     "datenschutz": "Datenschutz",
-    "agb": "AGB"
+    "agb": "AGB",
+    "cookies": "Cookie-Einstellungen"
   },
   "legal": {
     "back": "Zurück zur Startseite"
@@ -44,6 +45,41 @@
     "datenschutz": {
       "title": "Datenschutz — Deuy Digital",
       "description": "Datenschutzerklärung der Deuy Digital UG (haftungsbeschränkt) gemäß Art. 13 DSGVO."
+    },
+    "cookies": {
+      "title": "Cookie-Einstellungen — Deuy Digital",
+      "description": "Einwilligung in Google Analytics erteilen oder widerrufen."
+    }
+  },
+  "cookies": {
+    "banner": {
+      "aria": "Cookie-Einwilligung",
+      "title": "Dürfen wir Google Analytics verwenden?",
+      "body": "Mit Ihrer Einwilligung setzen wir Google Analytics ein, um pseudonymisierte Statistiken über die Nutzung dieser Website zu erstellen. Dabei werden Cookies gesetzt und Daten an Google (auch in die USA) übermittelt. Ohne Ihre Einwilligung wird nichts geladen. Sie können Ihre Entscheidung jederzeit in den <settingsLink>Cookie-Einstellungen</settingsLink> ändern. Details in unserer <privacyLink>Datenschutzerklärung</privacyLink>.",
+      "reject": "Ablehnen",
+      "accept": "Akzeptieren"
+    },
+    "settings": {
+      "title": "Cookie-Einstellungen",
+      "subtitle": "Einwilligung nach § 25 TDDDG und Art. 6 Abs. 1 lit. a DSGVO",
+      "necessary": {
+        "title": "Technisch notwendige Speicherung",
+        "body": "Wir speichern Ihre Auswahl sowie Ihre Sprach- und Design-Einstellung im lokalen Speicher Ihres Browsers (localStorage). Diese Speicherung ist technisch erforderlich und bedarf keiner Einwilligung (§ 25 Abs. 2 Nr. 2 TDDDG)."
+      },
+      "analytics": {
+        "title": "Webanalyse (Google Analytics 4)",
+        "body": "Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Zweck: pseudonymisierte Statistiken über die Nutzung dieser Website (z. B. aufgerufene Seiten, Verweildauer, Herkunft der Besucher). Es werden Cookies (_ga, _ga_*) mit einer Laufzeit von bis zu 2 Jahren gesetzt. Eine Übermittlung in die USA ist möglich (EU-US Data Privacy Framework). Google Signals und Werbefunktionen sind deaktiviert.",
+        "note": "Ein Widerruf wirkt sofort für die Zukunft: Google Analytics sendet keine Daten mehr und die Analyse-Cookies werden gelöscht. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt (Art. 7 Abs. 3 DSGVO).",
+        "none": "Auf dieser Website sind derzeit keine Analyse- oder Tracking-Dienste aktiv."
+      },
+      "status": {
+        "granted": "Aktueller Status: Google Analytics ist aktiviert.",
+        "denied": "Aktueller Status: Google Analytics ist deaktiviert.",
+        "undecided": "Aktueller Status: Sie haben noch keine Auswahl getroffen — Google Analytics ist deaktiviert."
+      },
+      "accept": "Google Analytics erlauben",
+      "reject": "Google Analytics ablehnen / widerrufen",
+      "moreInfo": "Weitere Informationen finden Sie in unserer <privacyLink>Datenschutzerklärung</privacyLink>."
     }
   }
 }

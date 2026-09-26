@@ -23,7 +23,8 @@
     "rights": "All rights reserved.",
     "impressum": "Imprint",
     "datenschutz": "Privacy Policy",
-    "agb": "Terms & Conditions"
+    "agb": "Terms & Conditions",
+    "cookies": "Cookie Settings"
   },
   "legal": {
     "back": "Back to home"
@@ -44,6 +45,41 @@
     "datenschutz": {
       "title": "Privacy Policy — Deuy Digital",
       "description": "Privacy policy (Datenschutzerklärung) for Deuy Digital UG (haftungsbeschränkt) under Art. 13 GDPR."
+    },
+    "cookies": {
+      "title": "Cookie Settings — Deuy Digital",
+      "description": "Grant or withdraw your consent to Google Analytics."
+    }
+  },
+  "cookies": {
+    "banner": {
+      "aria": "Cookie consent",
+      "title": "May we use Google Analytics?",
+      "body": "With your consent, we use Google Analytics to compile pseudonymised statistics about how this website is used. This sets cookies and transfers data to Google (including to the USA). Nothing is loaded without your consent. You can change your choice at any time in the <settingsLink>cookie settings</settingsLink>. Details in our <privacyLink>Privacy Policy</privacyLink>.",
+      "reject": "Reject",
+      "accept": "Accept"
+    },
+    "settings": {
+      "title": "Cookie Settings",
+      "subtitle": "Consent under § 25 TDDDG and Art. 6(1)(a) GDPR",
+      "necessary": {
+        "title": "Strictly necessary storage",
+        "body": "We store your choice as well as your language and theme preference in your browser's local storage (localStorage). This storage is strictly necessary and does not require consent (§ 25(2) no. 2 TDDDG)."
+      },
+      "analytics": {
+        "title": "Web analytics (Google Analytics 4)",
+        "body": "Provider: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Purpose: pseudonymised statistics about how this website is used (e.g. pages viewed, time on site, where visitors come from). Cookies (_ga, _ga_*) with a lifetime of up to 2 years are set. Data may be transferred to the USA (EU-US Data Privacy Framework). Google Signals and advertising features are disabled.",
+        "note": "Withdrawal takes effect immediately for the future: Google Analytics stops sending data and the analytics cookies are deleted. Processing carried out before withdrawal remains lawful (Art. 7(3) GDPR).",
+        "none": "No analytics or tracking services are currently active on this website."
+      },
+      "status": {
+        "granted": "Current status: Google Analytics is enabled.",
+        "denied": "Current status: Google Analytics is disabled.",
+        "undecided": "Current status: you haven't made a choice yet — Google Analytics is disabled."
+      },
+      "accept": "Allow Google Analytics",
+      "reject": "Reject / withdraw Google Analytics",
+      "moreInfo": "For more information, see our <privacyLink>Privacy Policy</privacyLink>."
     }
   }
 }

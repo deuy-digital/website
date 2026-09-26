@@ -62,12 +62,63 @@ export function Datenschutz() {
         <p>Daten: Ihre gewählte Design-Einstellung (hell/dunkel/System) und Spracheinstellung (Deutsch/Englisch).</p>
         <p>Zweck: Speicherung Ihrer Präferenzen für zukünftige Besuche.</p>
         <p>
-          Rechtsgrundlage: § 25 Abs. 2 Nr. 2 TTDSG — unbedingt erforderlich, um einen von Ihnen ausdrücklich
+          Rechtsgrundlage: § 25 Abs. 2 Nr. 2 TDDDG — unbedingt erforderlich, um einen von Ihnen ausdrücklich
           gewünschten Dienst (Beibehaltung Ihrer Einstellungen) bereitzustellen; eine Einwilligung ist hierfür nicht
-          erforderlich.
+          erforderlich. Dasselbe gilt für die Speicherung Ihrer Cookie-Auswahl (Schlüssel <code>deuy_consent</code>,
+          inkl. Zeitpunkt der Entscheidung als Nachweis nach Art. 7 Abs. 1 DSGVO).
         </p>
         <p>Speicherdauer: Bis Sie die Daten in Ihrem Browser löschen.</p>
-        <p>Diese Website setzt keine Cookies und keine Analyse- oder Marketing-Tools ein.</p>
+
+        <h3>3.4 Webanalyse mit Google Analytics 4 (nur mit Einwilligung)</h3>
+        <p>
+          Auf dieser Website setzen wir — ausschließlich nach Ihrer ausdrücklichen Einwilligung über unser
+          Cookie-Banner — Google Analytics 4 ein, einen Webanalysedienst der Google Ireland Limited, Gordon House,
+          Barrow Street, Dublin 4, Irland („Google“). Ohne Einwilligung wird das Google-Analytics-Skript nicht
+          geladen, es werden keine Cookies gesetzt und keine Daten an Google übermittelt.
+        </p>
+        <p>
+          Daten: Pseudonyme Online-Kennung (Client-ID im Cookie), aufgerufene Seiten und Verweildauer, Referrer
+          (Herkunftsseite), ungefährer Standort (Land/Region, aus der IP-Adresse abgeleitet), Gerätetyp,
+          Betriebssystem, Browser, Bildschirmauflösung, Spracheinstellung, Datum und Uhrzeit des Zugriffs. Google
+          Analytics 4 speichert keine vollständigen IP-Adressen; IP-Adressen von Nutzern aus der EU werden auf
+          EU-Servern verarbeitet und nur zur Standortbestimmung verwendet, danach verworfen.
+        </p>
+        <p>
+          Zweck: Erstellung pseudonymisierter Statistiken über die Nutzung unserer Website (z. B. Reichweite,
+          beliebte Seiten, Herkunft der Besucher), um unser Angebot zu verbessern. Google Signals,
+          geräteübergreifendes Tracking, Remarketing und die Personalisierung von Werbung sind deaktiviert.
+        </p>
+        <p>
+          Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO — Einwilligung; § 25 Abs. 1 TDDDG für das Setzen und
+          Auslesen von Cookies auf Ihrem Endgerät.
+        </p>
+        <p>
+          Cookies: <code>_ga</code> (Unterscheidung von Besuchern, Laufzeit 2 Jahre), <code>_ga_&lt;ID&gt;</code>{' '}
+          (Sitzungsstatus, Laufzeit 2 Jahre).
+        </p>
+        <p>
+          Auftragsverarbeitung: Mit Google besteht ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO (Google Ads
+          Data Processing Terms).
+        </p>
+        <p>
+          Speicherdauer: Nutzer- und ereignisbezogene Daten werden in Google Analytics nach 2 Monaten automatisch
+          gelöscht. Aggregierte, nicht personenbezogene Berichte bleiben davon unberührt.
+        </p>
+        <p>
+          Widerruf: Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft über die{' '}
+          <Link to="/cookie-einstellungen">Cookie-Einstellungen</Link> widerrufen (Link auch im Fußbereich jeder
+          Seite). Beim Widerruf wird die Datenerhebung sofort beendet und die Analyse-Cookies werden gelöscht. Die
+          Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt (Art. 7 Abs. 3 DSGVO).
+          Alternativ können Sie Cookies in Ihrem Browser blockieren oder das Browser-Add-on von Google installieren:{' '}
+          <a href="https://tools.google.com/dlpage/gaoptout?hl=de" rel="noopener noreferrer">
+            https://tools.google.com/dlpage/gaoptout?hl=de
+          </a>
+          . Weitere Informationen:{' '}
+          <a href="https://policies.google.com/privacy?hl=de" rel="noopener noreferrer">
+            https://policies.google.com/privacy?hl=de
+          </a>
+          .
+        </p>
       </Reveal>
 
       <Reveal>
@@ -86,6 +137,13 @@ export function Datenschutz() {
           einen Angemessenheitsbeschluss der EU-Kommission (Art. 45 DSGVO), sodass hierfür kein zusätzlicher
           Drittlandtransfer-Mechanismus erforderlich ist.
         </p>
+        <p>
+          <strong>Webanalyse (nur mit Einwilligung):</strong> Google Ireland Limited (Dublin, Irland), siehe
+          Abschnitt 3.4. Eine Übermittlung an die Google LLC (USA) kann nicht ausgeschlossen werden. Die Google LLC
+          ist nach dem EU-U.S. Data Privacy Framework zertifiziert; die Übermittlung erfolgt damit auf Grundlage des
+          Angemessenheitsbeschlusses der EU-Kommission vom 10. Juli 2023 (Art. 45 DSGVO). Ergänzend hat Google
+          EU-Standardvertragsklauseln abgeschlossen (Art. 46 Abs. 2 lit. c DSGVO).
+        </p>
       </Reveal>
 
       <Reveal>
@@ -98,6 +156,10 @@ export function Datenschutz() {
           <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
           <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
           <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+          <li>
+            Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO) — für Google
+            Analytics jederzeit über die <Link to="/cookie-einstellungen">Cookie-Einstellungen</Link>
+          </li>
         </ul>
         <p>Zur Ausübung Ihrer Rechte wenden Sie sich an: info@deuy.digital.</p>
       </Reveal>
@@ -128,14 +190,21 @@ export function Datenschutz() {
       </Reveal>
 
       <Reveal>
-        <h2>9. Cookies und Tracking</h2>
+        <h2>9. Cookies und Tracking (§ 25 TDDDG)</h2>
         <p>
-          Diese Website verwendet keine Cookies und keine Tracking- oder Analyse-Tools. Es werden ausschließlich die
-          in Abschnitt 3.3 genannten, technisch notwendigen Browserspeicher-Funktionen verwendet (§ 25 TTDSG).
+          Technisch notwendig (ohne Einwilligung): die in Abschnitt 3.3 genannten Browserspeicher-Einträge für
+          Sprache, Design und Ihre Cookie-Auswahl (§ 25 Abs. 2 Nr. 2 TDDDG).
+        </p>
+        <p>
+          Analyse (nur mit Einwilligung): Google Analytics 4, siehe Abschnitt 3.4. Vor Ihrer ausdrücklichen
+          Einwilligung werden keine Tracking- oder Analyse-Skripte geladen und keine entsprechenden Cookies gesetzt.
+          „Ablehnen“ ist im Banner genauso einfach möglich wie „Akzeptieren“. Ihre Einwilligung können Sie jederzeit
+          über die <Link to="/cookie-einstellungen">Cookie-Einstellungen</Link> erteilen oder widerrufen; der Link
+          befindet sich im Fußbereich jeder Seite.
         </p>
       </Reveal>
 
-      <p className="legal-date">Stand: August 2026</p>
+      <p className="legal-date">Stand: September 2026</p>
     </section>
   )
 }

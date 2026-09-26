@@ -374,3 +374,105 @@ main {
     transform: none;
   }
 }
+
+/* ─── Cookie consent ───────────────────────────────────────────────────── */
+.cookie-banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1000;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: var(--bg-alt);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.cookie-banner-text {
+  flex: 1;
+}
+
+.cookie-banner-title {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.cookie-banner a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.cookie-actions-inline {
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+/* Accept and reject share one style on purpose — see CookieBanner.tsx. */
+.cookie-button {
+  min-width: 130px;
+  padding: 11px 22px;
+  border: none;
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--bg);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.cookie-button:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.cookie-button:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.cookie-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.legal .cookie-status {
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.legal a {
+  color: var(--text);
+}
+
+@media (max-width: 600px) {
+  .cookie-banner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .cookie-banner .cookie-actions {
+    flex-direction: column;
+  }
+
+  .cookie-button {
+    width: 100%;
+  }
+}

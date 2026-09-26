@@ -62,6 +62,7 @@ export function Layout() {
           <Link to="/impressum">{t('footer.impressum')}</Link>
           <Link to="/datenschutz">{t('footer.datenschutz')}</Link>
           <Link to="/agb">{t('footer.agb')}</Link>
+          <Link to="/cookie-einstellungen">{t('footer.cookies')}</Link>
         </nav>
       </footer>
     </div>
