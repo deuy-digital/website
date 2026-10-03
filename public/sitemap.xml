@@ -1,26 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://deuy.digital/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/" />
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://deuy.digital/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/" />
+    <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://deuy.digital/impressum</loc>
-    <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/impressum" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/impressum" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/impressum" />
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://deuy.digital/de/impressum</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/impressum" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/impressum" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/impressum" />
+    <lastmod>2026-10-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://deuy.digital/agb</loc>
-    <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/agb" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/agb" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/agb" />
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://deuy.digital/de/agb</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/agb" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/agb" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/agb" />
+    <lastmod>2026-10-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://deuy.digital/datenschutz</loc>
-    <lastmod>2026-08-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/datenschutz" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/datenschutz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/datenschutz" />
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://deuy.digital/de/datenschutz</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/datenschutz" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/datenschutz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/datenschutz" />
+    <lastmod>2026-10-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

@@ -1,4 +1,5 @@
 /// <reference types="vite/client" />
+/// <reference types="vite-ssg" />
 
 interface ImportMetaEnv {
   /** GA4 measurement ID (G-XXXXXXX). Empty = analytics + cookie banner disabled. */

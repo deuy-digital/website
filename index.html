@@ -17,18 +17,14 @@
             })
             .join('?')
           window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+          // The prerendered markup below is for "/", not the restored URL.
+          window.__SPA_REDIRECTED__ = true
         }
       })(window.location)
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deuy Digital — Digital solutions, done right.</title>
-    <meta
-      name="description"
-      content="Deuy Digital builds clean, modern digital products for businesses that want to move fast. Get in touch: info@deuy.digital."
-    />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Deuy Digital UG (haftungsbeschränkt)" />
-    <link rel="canonical" href="https://deuy.digital/" />
 
     <!-- Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -36,30 +32,6 @@
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#1b1d23" media="(prefers-color-scheme: dark)" />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Deuy Digital" />
-    <meta property="og:title" content="Deuy Digital — Digital solutions, done right." />
-    <meta
-      property="og:description"
-      content="Deuy Digital builds clean, modern digital products for businesses that want to move fast."
-    />
-    <meta property="og:url" content="https://deuy.digital/" />
-    <meta property="og:image" content="https://deuy.digital/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="de_DE" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Deuy Digital — Digital solutions, done right." />
-    <meta
-      name="twitter:description"
-      content="Deuy Digital builds clean, modern digital products for businesses that want to move fast."
-    />
-    <meta name="twitter:image" content="https://deuy.digital/og-image.png" />
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -97,9 +69,40 @@
         } catch (e) {}
       })();
     </script>
+
+    <script>
+      // English lives at /, German under /de/. Send the visitor to their
+      // language before anything renders: an explicit choice from the language
+      // switch (src/components/Layout.vue) wins; otherwise browser-language
+      // detection runs on English URLs only. /de/ URLs are never redirected
+      // without an explicit choice, so crawlers (no stored choice, English
+      // browser) always see every URL as-is.
+      (function (l) {
+        var isDe = /^\/de(\/|$)/.test(l.pathname)
+        var target = null
+        try {
+          target = localStorage.getItem('deuy-lang')
+        } catch (e) {}
+        if (target !== 'en' && target !== 'de') {
+          target = null
+          var langs = navigator.languages || [navigator.language]
+          for (var i = 0; !isDe && i < langs.length; i++) {
+            var lng = (langs[i] || '').toLowerCase().split('-')[0]
+            if (lng === 'en' || lng === 'de') {
+              target = lng
+              break
+            }
+          }
+        }
+        var path = null
+        if (target === 'de' && !isDe) path = l.pathname === '/' ? '/de/' : '/de' + l.pathname
+        if (target === 'en' && isDe) path = l.pathname.replace(/^\/de/, '') || '/'
+        if (path) l.replace(path + l.search + l.hash)
+      })(window.location)
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

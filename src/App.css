@@ -47,7 +47,7 @@
   padding: 3px;
 }
 
-.lang-switch button,
+.lang-switch a,
 .theme-switch button {
   background: transparent;
   border: none;
@@ -58,9 +58,10 @@
   transition: background 0.2s, color 0.2s;
 }
 
-.lang-switch button {
+.lang-switch a {
   padding: 6px 12px;
   font-size: 13px;
+  text-decoration: none;
 }
 
 .theme-switch button {
@@ -76,12 +77,12 @@
   height: 16px;
 }
 
-.lang-switch button:hover,
+.lang-switch a:hover,
 .theme-switch button:hover {
   color: var(--text);
 }
 
-.lang-switch button.active,
+.lang-switch a.active,
 .theme-switch button.active {
   background: var(--text);
   color: var(--bg);
