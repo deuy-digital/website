@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { onMounted, onUnmounted, ref, type ShallowRef } from 'vue'
 
 interface RevealOptions {
   threshold?: number
@@ -8,22 +8,20 @@ interface RevealOptions {
   rootMargin?: string
 }
 
-export function useReveal<T extends HTMLElement>({
-  threshold = 0.2,
-  rootMargin = '0px 0px -200px 0px',
-}: RevealOptions = {}) {
-  const ref = useRef<T>(null)
-  const [isVisible, setIsVisible] = useState(false)
+export function useReveal(
+  el: Readonly<ShallowRef<HTMLElement | null>>,
+  { threshold = 0.2, rootMargin = '0px 0px -200px 0px' }: RevealOptions = {},
+) {
+  const isVisible = ref(false)
+  let cleanup: (() => void) | undefined
 
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
+  onMounted(() => {
+    const target = el.value
+    if (!target) return
 
     const reveal = () => {
-      setIsVisible(true)
-      observer.disconnect()
-      window.removeEventListener('scroll', onScroll)
-      window.removeEventListener('resize', onScroll)
+      isVisible.value = true
+      cleanup?.()
     }
 
     const observer = new IntersectionObserver(
@@ -32,7 +30,7 @@ export function useReveal<T extends HTMLElement>({
       },
       { threshold, rootMargin },
     )
-    observer.observe(el)
+    observer.observe(target)
 
     // Fallback for fast/instant scrolls (scrollbar-drag, End key, jump
     // links) that can skip an element entirely without ever rendering a
@@ -43,7 +41,7 @@ export function useReveal<T extends HTMLElement>({
     let ticking = false
     const checkSkippedPast = () => {
       ticking = false
-      if (el.getBoundingClientRect().bottom < 0) reveal()
+      if (target.getBoundingClientRect().bottom < 0) reveal()
     }
     const onScroll = () => {
       if (ticking) return
@@ -54,12 +52,14 @@ export function useReveal<T extends HTMLElement>({
     window.addEventListener('scroll', onScroll, { passive: true })
     window.addEventListener('resize', onScroll)
 
-    return () => {
+    cleanup = () => {
       observer.disconnect()
       window.removeEventListener('scroll', onScroll)
       window.removeEventListener('resize', onScroll)
     }
-  }, [])
+  })
 
-  return { ref, isVisible }
+  onUnmounted(() => cleanup?.())
+
+  return isVisible
 }

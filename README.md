@@ -1,32 +1,14 @@
-# React + TypeScript + Vite
+# deuy.digital
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Company website — Vue 3 + TypeScript, statically prerendered with [vite-ssg](https://github.com/antfu-collective/vite-ssg) and deployed to GitHub Pages.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```sh
+npm run dev      # dev server
+npm run build    # type-check + prerender every route to dist/<route>.html
+npm run preview  # serve dist/
+npm run lint
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+- Routes live in `src/routes.ts`; each one is prerendered with its own title, description, canonical and Open Graph tags (`src/composables/useSEO.ts`). Keep `public/sitemap.xml` in sync.
+- English lives at `/`, German at `/de/` — every page in both, linked with `hreflang`. The language comes from the URL only; an inline script in `index.html` sends visitors to their language (stored choice from the switch, else browser language on English URLs).
+- `VITE_GA_MEASUREMENT_ID` enables Google Analytics behind an opt-in banner (`src/lib/analytics.ts`); empty = no analytics, no banner.
