@@ -5,7 +5,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/" />
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,9 +14,27 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/" />
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://deuy.digital/work/seel-schreibwaren</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/work/seel-schreibwaren" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/work/seel-schreibwaren" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/work/seel-schreibwaren" />
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deuy.digital/de/work/seel-schreibwaren</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/work/seel-schreibwaren" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/work/seel-schreibwaren" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/work/seel-schreibwaren" />
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://deuy.digital/impressum</loc>

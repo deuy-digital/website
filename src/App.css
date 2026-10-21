@@ -326,6 +326,268 @@ main {
   font-size: 13px;
 }
 
+/* ─── Selected work ────────────────────────────────────────────────────── */
+.work {
+  border-top: 1px solid var(--border);
+  padding: 72px 24px 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 36px;
+}
+
+.work h2 {
+  font-size: 26px;
+}
+
+.work-intro {
+  margin-top: 8px;
+  color: var(--text-dim);
+}
+
+.work-grid {
+  width: 100%;
+  max-width: 1040px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--bg-alt);
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s;
+}
+
+.work-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--text-dim);
+}
+
+/* Browser-frame around a screenshot; the three dots are the "window". */
+.work-shot {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.work-card .work-shot {
+  border-width: 0 0 1px;
+  border-radius: 0;
+}
+
+.work-shot::before {
+  content: '';
+  display: block;
+  height: 28px;
+  border-bottom: 1px solid var(--border);
+  background:
+    radial-gradient(circle at 14px 50%, var(--border) 4px, transparent 5px),
+    radial-gradient(circle at 30px 50%, var(--border) 4px, transparent 5px),
+    radial-gradient(circle at 46px 50%, var(--border) 4px, transparent 5px);
+}
+
+.work-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.work-body {
+  flex: 1;
+  padding: 24px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.work-body h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.work-meta {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.work-summary {
+  color: var(--text-dim);
+}
+
+.work-tags {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.work-tags li {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-dim);
+}
+
+.work-more {
+  margin-top: auto;
+  padding-top: 12px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* ─── Case study ───────────────────────────────────────────────────────── */
+.case {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 56px 24px 96px;
+}
+
+.case-header {
+  margin-bottom: 32px;
+}
+
+.case h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  animation: reveal-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+.case-subtitle {
+  font-size: 18px;
+  color: var(--text-dim);
+  animation: reveal-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+.case .reveal + .reveal {
+  margin-top: 40px;
+}
+
+.case-facts {
+  margin: 0 0 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px 24px;
+}
+
+.case-facts dt {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.case-facts dd {
+  margin: 2px 0 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.case-facts a {
+  white-space: nowrap;
+}
+
+/* The generic .case list rules below would otherwise indent the tag row
+ * and push every tag after the first down by 8px. */
+.case .work-tags {
+  padding: 0;
+}
+
+.case .work-tags li + li {
+  margin-top: 0;
+}
+
+.case h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.case p {
+  line-height: 1.65;
+}
+
+.case p + p {
+  margin-top: 10px;
+}
+
+.case ul {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.65;
+}
+
+.case li + li {
+  margin-top: 8px;
+}
+
+.case-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.case-timeline li {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 16px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+  line-height: 1.55;
+}
+
+.case-timeline li:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.case-year {
+  font-weight: 800;
+}
+
+.case-visit {
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid var(--text);
+  padding-bottom: 2px;
+}
+
+.case-cta {
+  padding: 36px 28px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--bg-alt);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.case-cta .cta {
+  animation: none;
+}
+
 @media (max-width: 600px) {
   .header {
     padding: 16px 20px;
@@ -350,6 +612,22 @@ main {
   .legal {
     padding: 40px 20px 72px;
   }
+
+  .work {
+    padding: 56px 20px 64px;
+  }
+
+  .work-body {
+    padding: 20px;
+  }
+
+  .case {
+    padding: 40px 20px 72px;
+  }
+
+  .case h1 {
+    font-size: 28px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -362,7 +640,9 @@ main {
   .contact.is-visible .email-link,
   .legal-back,
   .legal h1,
-  .legal-subtitle {
+  .legal-subtitle,
+  .case h1,
+  .case-subtitle {
     animation: none;
     opacity: 1;
     transform: none;
@@ -373,6 +653,10 @@ main {
     transition: none;
     opacity: 1;
     transform: none;
+  }
+
+  .work-card {
+    transition: none;
   }
 }
 

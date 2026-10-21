@@ -49,6 +49,12 @@
     "cookies": {
       "title": "Cookie Settings — Deuy Digital",
       "description": "Grant or withdraw your consent to Google Analytics."
+    },
+    "work": {
+      "seel": {
+        "title": "Seel Schreibwaren — Case study — Deuy Digital",
+        "description": "Website, headless CMS, custom backend and sovereign European hosting for Seel Schreibwaren in Heilbronn — built and run by Deuy Digital since 2022."
+      }
     }
   },
   "cookies": {
@@ -80,6 +86,105 @@
       "accept": "Allow Google Analytics",
       "reject": "Reject / withdraw Google Analytics",
       "moreInfo": "For more information, see our <privacyLink>Privacy Policy</privacyLink>."
+    }
+  },
+  "work": {
+    "heading": "Selected work",
+    "intro": "Client projects and our own product.",
+    "readMore": "Read the case study",
+    "visit": "Visit seel-schreibwaren.de",
+    "back": "Back to home",
+    "facts": {
+      "client": "Client",
+      "industry": "Industry",
+      "since": "Client since",
+      "site": "Live site"
+    },
+    "cta": {
+      "heading": "Need something similar?",
+      "body": "Tell us about your business — we'll tell you what we'd build.",
+      "button": "Get in touch"
+    },
+    "seel": {
+      "name": "Seel Schreibwaren",
+      "industry": "Stationery & art supplies",
+      "city": "Heilbronn",
+      "since": "2022",
+      "summary": "Website, CMS, custom form backend, hosting and ongoing operations — since 2022.",
+      "tags": [
+        "Next.js",
+        "Headless CMS",
+        "EU hosting",
+        "DE / EN",
+        "Local SEO"
+      ],
+      "subtitle": "A stationery shop in the heart of Heilbronn — the website, the CMS, a custom backend, hosted in Europe.",
+      "client": {
+        "heading": "The client",
+        "body": "Seel Schreibwaren sells stationery, office, art and craft supplies in Heilbronn's city centre. They wanted a website they could keep up to date themselves — new arrivals, events, the product range — without calling a developer for every change."
+      },
+      "built": {
+        "heading": "What we built",
+        "items": [
+          "A fast, statically generated website (Next.js) in German and English, with pages for news, events, the product range, services, the team, careers and more.",
+          "A self-hosted headless CMS so the shop edits its own content. Edits are published automatically on a schedule, and every image is optimised at build time.",
+          "The school-list service: a paper process turned into an online one — more on that below.",
+          "Local SEO: dedicated landing pages for Heilbronn and 19 surrounding towns, plus structured metadata on every page."
+        ]
+      },
+      "timeline": {
+        "heading": "Since then",
+        "items": [
+          {
+            "year": "2022",
+            "text": "Website and CMS go live"
+          },
+          {
+            "year": "2022",
+            "text": "School-list service: parents order the school's stationery list online"
+          },
+          {
+            "year": "2025",
+            "text": "Migration to TypeScript and the Next.js App Router"
+          },
+          {
+            "year": "2026",
+            "text": "Move to Scaleway with Terraform, new school-list backend, CMS upgrade with a verified data migration, English version"
+          }
+        ]
+      },
+      "hosting": {
+        "heading": "Hosted in Europe",
+        "body": "The whole stack — website, CMS and backend — runs on Scaleway, a European cloud provider under EU jurisdiction. Customer and form data never leave Europe, and nothing depends on a US hyperscaler. Digital sovereignty by default, not as an add-on."
+      },
+      "schoolList": {
+        "heading": "From paper list to online order",
+        "paragraphs": [
+          "Every summer, schools in the region hand out a list of the stationery each child needs for the coming year. Parents used to bring that sheet into the shop.",
+          "Now they photograph or scan the list and upload it on seel-schreibwaren.de, add the details that matter — the child's name, left- or right-handed, colour and favourite-animal wishes, whether items should be labelled — and choose pickup or delivery. The shop receives everything in one email, assembles the set, and the parent gets an automatic confirmation.",
+          "A small change for parents, a big one for the shop: the busiest weeks of the year now arrive as structured requests instead of paper sheets at the counter."
+        ]
+      }
+    },
+    "labels": {
+      "client": "Client project",
+      "product": "Our product"
+    }
+  },
+  "product": {
+    "vertragbot": {
+      "name": "Vertragbot",
+      "meta": "Contract management",
+      "summary": "Upload the contracts you already have, let AI extract parties, terms and notice periods, ask questions, sign — all on European servers with EU-based AI.",
+      "tags": [
+        "AI",
+        "E-signature",
+        "MCP server",
+        "EU-hosted",
+        "Web · iOS · Android",
+        "DE / EN / ES"
+      ],
+      "cta": "Visit vertragbot.de"
     }
   }
 }

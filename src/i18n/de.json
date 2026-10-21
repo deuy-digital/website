@@ -49,6 +49,12 @@
     "cookies": {
       "title": "Cookie-Einstellungen — Deuy Digital",
       "description": "Einwilligung in Google Analytics erteilen oder widerrufen."
+    },
+    "work": {
+      "seel": {
+        "title": "Seel Schreibwaren — Fallstudie — Deuy Digital",
+        "description": "Website, Headless CMS, eigenes Backend und souveränes europäisches Hosting für Seel Schreibwaren in Heilbronn — seit 2022 von Deuy Digital gebaut und betrieben."
+      }
     }
   },
   "cookies": {
@@ -80,6 +86,105 @@
       "accept": "Google Analytics erlauben",
       "reject": "Google Analytics ablehnen / widerrufen",
       "moreInfo": "Weitere Informationen finden Sie in unserer <privacyLink>Datenschutzerklärung</privacyLink>."
+    }
+  },
+  "work": {
+    "heading": "Ausgewählte Projekte",
+    "intro": "Kundenprojekte und unser eigenes Produkt.",
+    "readMore": "Zur Fallstudie",
+    "visit": "seel-schreibwaren.de besuchen",
+    "back": "Zurück zur Startseite",
+    "facts": {
+      "client": "Kunde",
+      "industry": "Branche",
+      "since": "Kunde seit",
+      "site": "Live-Seite"
+    },
+    "cta": {
+      "heading": "Brauchen Sie etwas Ähnliches?",
+      "body": "Erzählen Sie uns von Ihrem Unternehmen — wir sagen Ihnen, was wir bauen würden.",
+      "button": "Kontakt aufnehmen"
+    },
+    "seel": {
+      "name": "Seel Schreibwaren",
+      "industry": "Schreibwaren & Künstlerbedarf",
+      "city": "Heilbronn",
+      "since": "2022",
+      "summary": "Website, CMS, eigenes Formular-Backend, Hosting und laufender Betrieb — seit 2022.",
+      "tags": [
+        "Next.js",
+        "Headless CMS",
+        "EU-Hosting",
+        "DE / EN",
+        "Lokales SEO"
+      ],
+      "subtitle": "Ein Schreibwarengeschäft im Herzen von Heilbronn — die Website, das CMS, ein eigenes Backend, gehostet in Europa.",
+      "client": {
+        "heading": "Der Kunde",
+        "body": "Seel Schreibwaren verkauft Schreibwaren, Bürobedarf, Künstler- und Bastelbedarf in der Heilbronner Innenstadt. Gewünscht war eine Website, die das Team selbst aktuell halten kann — Neuheiten, Veranstaltungen, Sortiment — ohne für jede Änderung einen Entwickler zu brauchen."
+      },
+      "built": {
+        "heading": "Was wir gebaut haben",
+        "items": [
+          "Eine schnelle, statisch generierte Website (Next.js) auf Deutsch und Englisch mit Seiten für Neuheiten, Veranstaltungen, Sortiment, Service, Team, Karriere und mehr.",
+          "Ein selbst gehostetes Headless CMS, mit dem das Geschäft seine Inhalte selbst pflegt. Änderungen werden automatisch nach Zeitplan veröffentlicht, alle Bilder beim Build optimiert.",
+          "Der Schullisten-Service: ein Papierprozess, der online ging — mehr dazu unten.",
+          "Lokales SEO: eigene Landingpages für Heilbronn und 19 Orte im Umkreis sowie strukturierte Metadaten auf jeder Seite."
+        ]
+      },
+      "timeline": {
+        "heading": "Seitdem",
+        "items": [
+          {
+            "year": "2022",
+            "text": "Website und CMS gehen live"
+          },
+          {
+            "year": "2022",
+            "text": "Schullisten-Service: Eltern bestellen die Schulliste online"
+          },
+          {
+            "year": "2025",
+            "text": "Migration auf TypeScript und den Next.js App Router"
+          },
+          {
+            "year": "2026",
+            "text": "Umzug zu Scaleway mit Terraform, neues Schullisten-Backend, CMS-Upgrade mit verifizierter Datenmigration, englische Version"
+          }
+        ]
+      },
+      "hosting": {
+        "heading": "Gehostet in Europa",
+        "body": "Der gesamte Stack — Website, CMS und Backend — läuft bei Scaleway, einem europäischen Cloud-Anbieter unter EU-Recht. Kunden- und Formulardaten verlassen Europa nicht, und nichts hängt von einem US-Hyperscaler ab. Digitale Souveränität von Anfang an, nicht als Zusatz."
+      },
+      "schoolList": {
+        "heading": "Vom Zettel zur Online-Bestellung",
+        "paragraphs": [
+          "Jeden Sommer geben die Schulen der Region eine Liste aus, was jedes Kind im neuen Schuljahr braucht. Früher brachten Eltern diesen Zettel ins Geschäft.",
+          "Heute fotografieren oder scannen sie die Liste und laden sie auf seel-schreibwaren.de hoch, ergänzen die wichtigen Details — Name des Kindes, Links- oder Rechtshänder, Farb- und Lieblingstier-Wünsche, ob die Sachen beschriftet werden sollen — und wählen Abholung oder Lieferung. Das Geschäft bekommt alles gebündelt per E-Mail, stellt das Set zusammen, und die Eltern erhalten automatisch eine Bestätigung.",
+          "Für die Eltern eine kleine Änderung, für das Geschäft eine große: Die geschäftigsten Wochen des Jahres kommen jetzt als strukturierte Anfragen an statt als Zettel an der Theke."
+        ]
+      }
+    },
+    "labels": {
+      "client": "Kundenprojekt",
+      "product": "Unser Produkt"
+    }
+  },
+  "product": {
+    "vertragbot": {
+      "name": "Vertragbot",
+      "meta": "Vertragsverwaltung",
+      "summary": "Bestehende Verträge hochladen, von der KI Parteien, Laufzeiten und Kündigungsfristen auslesen lassen, Fragen stellen, unterschreiben — alles auf europäischen Servern mit KI aus der EU.",
+      "tags": [
+        "KI",
+        "E-Signatur",
+        "MCP-Server",
+        "EU-Hosting",
+        "Web · iOS · Android",
+        "DE / EN / ES"
+      ],
+      "cta": "vertragbot.de besuchen"
     }
   }
 }

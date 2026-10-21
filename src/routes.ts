@@ -7,6 +7,7 @@ import Impressum from './pages/Impressum.vue'
 import AGB from './pages/AGB.vue'
 import Datenschutz from './pages/Datenschutz.vue'
 import CookieSettings from './pages/CookieSettings.vue'
+import SeelSchreibwaren from './pages/SeelSchreibwaren.vue'
 
 const pages: { path: string; component: Component }[] = [
   { path: '/', component: Home },
@@ -14,6 +15,7 @@ const pages: { path: string; component: Component }[] = [
   { path: '/agb', component: AGB },
   { path: '/datenschutz', component: Datenschutz },
   { path: '/cookie-einstellungen', component: CookieSettings },
+  { path: '/work/seel-schreibwaren', component: SeelSchreibwaren },
 ]
 
 // Every page exists once per language: English at /<page>, German at
