@@ -55,7 +55,7 @@ useSEO({ key: 'seo.impressum', path: '/impressum' })
       <p>
         Gemäß § 27 a Umsatzsteuergesetz:
         <br />
-        [DE XXX XXX XXX]
+        DE465744960
       </p>
     </Reveal>
 
