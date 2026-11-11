@@ -30,6 +30,7 @@
     "back": "Back to home"
   },
   "seo": {
+    "organization": "Deuy Digital is a software team based in Heilbronn, Germany. We build custom software, e-commerce and Shopify solutions, and AI solutions for businesses in the Heilbronn-Franken region and beyond.",
     "home": {
       "title": "Deuy Digital — Digital solutions, done right.",
       "description": "Deuy Digital builds clean, modern digital products for businesses that want to move fast. Get in touch: info@deuy.digital."
@@ -49,6 +50,20 @@
     "cookies": {
       "title": "Cookie Settings — Deuy Digital",
       "description": "Grant or withdraw your consent to Google Analytics."
+    },
+    "services": {
+      "custom": {
+        "title": "Custom Software Development in Heilbronn — Deuy Digital",
+        "description": "Custom software development in Heilbronn: web applications, backends and integrations built around your processes. On site in person, hosted in Europe."
+      },
+      "ecommerce": {
+        "title": "E-Commerce & Shopify in Heilbronn — Deuy Digital",
+        "description": "E-commerce and Shopify solutions from Heilbronn: store setup, theme development, custom apps, custom ordering flows, integrations and hosting in Europe."
+      },
+      "ai": {
+        "title": "AI Solutions & AI Development in Heilbronn — Deuy Digital",
+        "description": "AI solutions from Heilbronn: document analysis, assistants and automation, integrated into your software and hosted in the EU. From the makers of Vertragbot."
+      }
     },
     "work": {
       "seel": {
@@ -86,6 +101,155 @@
       "accept": "Allow Google Analytics",
       "reject": "Reject / withdraw Google Analytics",
       "moreInfo": "For more information, see our <privacyLink>Privacy Policy</privacyLink>."
+    }
+  },
+  "services": {
+    "heading": "Services",
+    "intro": "Software development from Heilbronn for businesses in the Heilbronn-Franken region and beyond.",
+    "more": "Learn more",
+    "otherHeading": "More services",
+    "reference": {
+      "heading": "A reference from Heilbronn",
+      "body": "For Seel Schreibwaren in Heilbronn's city centre we have built and run the website, the CMS and a custom backend since 2022.",
+      "link": "Read the case study"
+    },
+    "cta": {
+      "heading": "Let's talk about your project",
+      "body": "Tell us briefly what you have in mind and we'll get back to you with an honest assessment.",
+      "button": "Get in touch"
+    },
+    "items": {
+      "custom": {
+        "name": "Custom software",
+        "summary": "Web applications, backends and integrations tailored to how you work, for when off-the-shelf software doesn't fit.",
+        "title": "Custom Software Development in Heilbronn",
+        "subtitle": "Tailor-made web applications, backends and integrations for businesses whose processes don't fit off-the-shelf software.",
+        "sections": [
+          {
+            "heading": "When custom software pays off",
+            "paragraphs": [
+              "Off-the-shelf software covers a lot, until a process belongs to your business and no one else's. That's when spreadsheets, double data entry and workarounds appear. A custom solution models exactly that process and connects the systems you already use."
+            ]
+          },
+          {
+            "heading": "What we build",
+            "items": [
+              "Web applications and customer portals that work in the browser and on phones.",
+              "Backends and APIs that process forms, orders or internal workflows.",
+              "Integrations between existing systems, such as online shop, inventory, accounting or CRM.",
+              "Digitising paper processes: from a form on the counter to a structured online request.",
+              "AI features where they genuinely save work, with EU-hosted models and servers if you prefer."
+            ]
+          },
+          {
+            "heading": "How we work",
+            "paragraphs": [
+              "We start with a conversation about your process, not about a technology. That leads to a small first scope you can test early. From there we build in small steps and can take care of hosting, maintenance and further development.",
+              "We work with TypeScript and modern web frameworks and prefer European hosting providers, so your data stays in the EU."
+            ]
+          },
+          {
+            "heading": "Your software partner in Heilbronn",
+            "paragraphs": [
+              "Deuy Digital is based in Heilbronn. For businesses in Heilbronn, Neckarsulm and the Heilbronn-Franken region that means short distances and meetings in person. Projects outside the region are handled remotely."
+            ]
+          }
+        ]
+      },
+      "ecommerce": {
+        "name": "E-commerce & Shopify",
+        "summary": "Online shops and ordering flows that fit your business: on Shopify, custom-built or a combination of both.",
+        "title": "E-Commerce and Shopify Solutions from Heilbronn",
+        "subtitle": "Online shops, Shopify development and the technology behind them for retailers and businesses that want to sell online.",
+        "sections": [
+          {
+            "heading": "Selling online the way your business works",
+            "paragraphs": [
+              "Not every business needs the same online shop. Sometimes a Shopify store is the fastest and most affordable route. Sometimes it takes a custom ordering flow, such as pre-orders with pickup, configurators or B2B ordering with customer-specific prices. We advise you on which route fits your range, budget and team, and then build it."
+            ]
+          },
+          {
+            "heading": "Shopify development",
+            "paragraphs": [
+              "Shopify gets you online quickly: hosting, payments and checkout are already solved. We take care of everything that should set your store apart."
+            ],
+            "items": [
+              "Setup and configuration of new Shopify stores, including products, shipping, taxes and payment methods.",
+              "Theme customisation and custom theme development to match your brand.",
+              "Custom Shopify apps and extensions for features you can't get off the shelf.",
+              "Migration of existing shops to Shopify, with products, customers and redirects.",
+              "Headless storefronts when the shop needs to be especially fast or especially individual."
+            ]
+          },
+          {
+            "heading": "Custom e-commerce solutions",
+            "paragraphs": [
+              "Where a standard shop isn't enough, we build the missing parts or the whole solution."
+            ],
+            "items": [
+              "Custom ordering and enquiry flows such as click & collect, pre-orders or configurators.",
+              "Connections to payment providers, shipping providers, inventory, accounting and newsletter tools.",
+              "Content and product data in a CMS your team can maintain itself.",
+              "Fast load times, technical SEO and local visibility.",
+              "Hosting in Europe plus ongoing operations and further development."
+            ]
+          },
+          {
+            "heading": "From the shop floor to an online channel",
+            "paragraphs": [
+              "For Seel Schreibwaren in Heilbronn we took a paper process online: parents upload their child's school list and choose pickup or delivery, and the shop receives everything as a structured request. Solutions like this come from understanding how the shop actually works, not just from installing a shopping cart."
+            ]
+          },
+          {
+            "heading": "E-commerce and Shopify partner in Heilbronn",
+            "paragraphs": [
+              "We are a software team from Heilbronn and are happy to come to you for a first conversation, in Heilbronn, Neckarsulm and the Heilbronn-Franken region. You work directly with the developers who build your shop and solve the special cases too."
+            ]
+          }
+        ]
+      },
+      "ai": {
+        "name": "AI solutions",
+        "summary": "AI that takes real work off your hands: reading documents, answering questions, automating workflows, as in our own product, Vertragbot.",
+        "title": "AI Solutions from Heilbronn",
+        "subtitle": "We build AI into your software and workflows where it noticeably saves work, and in a way that keeps your data in Europe.",
+        "sections": [
+          {
+            "heading": "AI that helps in day-to-day work",
+            "paragraphs": [
+              "Most businesses don't need their own AI model. They need an answer to a simple question: which recurring work can AI take off our hands? Often it's documents that have to be read, requests that have to be sorted, or information that has to be gathered from several sources. We find those spots with you and build the right solution."
+            ]
+          },
+          {
+            "heading": "What we build",
+            "items": [
+              "Document analysis: automatically reading contracts, invoices or forms and capturing the key details in structured form.",
+              "Assistants and chatbots that answer questions based on your own documents and data.",
+              "Automation of recurring tasks, such as classifying requests, summarising texts or transferring data.",
+              "AI features in existing software, websites and online shops.",
+              "Connecting your systems to AI assistants, for example through an MCP server.",
+              "Operation with AI models and servers in the EU when data protection requires it."
+            ]
+          },
+          {
+            "heading": "How we approach it",
+            "paragraphs": [
+              "We start small: with one concrete use case and a prototype that shows you whether the AI works reliably enough in your day-to-day. Only once that convinces do we extend the solution and integrate it into your systems. And we'll say so openly when a simple rule or a form is a better solution than AI."
+            ]
+          },
+          {
+            "heading": "AI development on site in Heilbronn",
+            "paragraphs": [
+              "Deuy Digital is a software team from Heilbronn. We work with businesses from Heilbronn, Neckarsulm and the Heilbronn-Franken region in person, from the first conversation through the prototype to ongoing operation."
+            ]
+          }
+        ],
+        "reference": {
+          "heading": "Our own AI product: Vertragbot",
+          "body": "We don't only use AI for clients. We also run our own product on it. With Vertragbot, users upload existing contracts, the AI extracts parties, terms and notice periods and answers questions about the contract; signing happens right in the app. Vertragbot runs on the web, iOS and Android, on European servers with AI from the EU. What we learn there goes into every client project.",
+          "link": "Visit vertragbot.de"
+        }
+      }
     }
   },
   "work": {

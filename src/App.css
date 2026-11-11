@@ -1,4 +1,5 @@
 .page {
+  --header-h: 82px;
   display: flex;
   flex-direction: column;
   min-height: 100svh;
@@ -8,7 +9,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 32px;
+  height: var(--header-h);
+  padding: 0 32px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -109,9 +111,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   gap: 20px;
-  padding: 96px 24px 88px;
+  /* Fills the first screen: nothing of the next section peeks in. */
+  min-height: calc(100svh - var(--header-h));
+  padding: 48px 24px 72px;
 }
 
 .hero-logo {
@@ -160,7 +165,6 @@ main {
 }
 
 .contact {
-  border-top: 1px solid var(--border);
   background: var(--bg-alt);
   padding: 72px 24px;
   display: flex;
@@ -223,7 +227,28 @@ main {
 
 .footer-nav {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 16px;
+}
+
+.footer-services a {
+  font-weight: 600;
+}
+
+.footer-address {
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.footer-address a {
+  color: var(--text-dim);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-address a:hover {
+  color: var(--text);
 }
 
 .footer-nav a {
@@ -326,19 +351,124 @@ main {
   font-size: 13px;
 }
 
-/* ─── Selected work ────────────────────────────────────────────────────── */
-.work {
-  border-top: 1px solid var(--border);
-  padding: 72px 24px 88px;
+/* ─── Services ─────────────────────────────────────────────────────────── */
+/* Borderless, softly tinted tiles: the tint is derived from the text colour,
+ * so it stays subtle in both themes. */
+.services {
+  padding: 64px 24px 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 36px;
+  gap: 44px;
+}
+
+.services h2 {
+  font-size: 30px;
+  letter-spacing: -0.02em;
+}
+
+.services-grid {
+  width: 100%;
+  max-width: 1040px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 28px;
+  text-align: left;
+  text-decoration: none;
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--text) 4%, transparent);
+  transition: background-color 0.25s ease;
+}
+
+.service-card:hover {
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+}
+
+.service-card:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.service-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 14px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+  color: var(--text);
+}
+
+.service-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.service-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.service-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-dim);
+}
+
+.service-more {
+  margin-top: auto;
+  padding-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.service-arrow {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover .service-arrow {
+  transform: translateX(4px);
+}
+
+/* The same tiles cross-link the service pages ("More services"). */
+.case .services-grid {
+  margin-top: 16px;
+}
+
+.case .service-card p {
+  line-height: 1.6;
+}
+
+/* ─── Selected work ────────────────────────────────────────────────────── */
+/* Same borderless tinted tiles as the services section. */
+.work {
+  padding: 64px 24px 104px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 44px;
 }
 
 .work h2 {
-  font-size: 26px;
+  font-size: 30px;
+  letter-spacing: -0.02em;
 }
 
 .work-intro {
@@ -351,7 +481,7 @@ main {
   max-width: 1040px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
+  gap: 16px;
   align-items: stretch;
 }
 
@@ -359,31 +489,30 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 12px;
   text-align: left;
   text-decoration: none;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: var(--bg-alt);
-  overflow: hidden;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s;
+  border-radius: 24px;
+  background: color-mix(in srgb, var(--text) 4%, transparent);
+  transition: background-color 0.25s ease;
 }
 
 .work-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--text-dim);
+  background: color-mix(in srgb, var(--text) 8%, transparent);
 }
 
-/* Browser-frame around a screenshot; the three dots are the "window". */
+.work-card:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+/* Browser-frame around a screenshot (case study page); the three dots are
+ * the "window". */
 .work-shot {
   border: 1px solid var(--border);
   border-radius: 12px;
   background: var(--bg);
   overflow: hidden;
-}
-
-.work-card .work-shot {
-  border-width: 0 0 1px;
-  border-radius: 0;
 }
 
 .work-shot::before {
@@ -403,35 +532,56 @@ main {
   height: auto;
 }
 
+/* On the cards the screenshot is a plain rounded image, no frame. */
+.work-card .work-shot {
+  border: none;
+  border-radius: 14px;
+}
+
+.work-card .work-shot::before {
+  content: none;
+}
+
+.work-card .work-shot img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.work-card:hover .work-shot img {
+  transform: scale(1.03);
+}
+
 .work-body {
   flex: 1;
-  padding: 24px 28px 28px;
+  padding: 22px 16px 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .work-body h3 {
   margin: 0;
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .work-meta {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--text-dim);
   text-transform: uppercase;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.6px;
 }
 
 .work-summary {
+  font-size: 15px;
+  line-height: 1.6;
   color: var(--text-dim);
 }
 
 .work-tags {
   list-style: none;
-  margin: 8px 0 0;
+  margin: 10px 0 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -440,18 +590,30 @@ main {
 
 .work-tags li {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 4px 10px;
-  border: 1px solid var(--border);
   border-radius: 999px;
+  background: color-mix(in srgb, var(--text) 7%, transparent);
   color: var(--text-dim);
 }
 
 .work-more {
   margin-top: auto;
-  padding-top: 12px;
-  font-weight: 700;
+  padding-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
   color: var(--text);
+}
+
+.work-arrow {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.work-card:hover .work-arrow {
+  transform: translateX(4px);
 }
 
 /* ─── Case study ───────────────────────────────────────────────────────── */
@@ -564,19 +726,26 @@ main {
 }
 
 .case-visit {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   margin-top: 20px;
-  font-weight: 700;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--text) 6%, transparent);
+  font-size: 15px;
+  font-weight: 600;
   text-decoration: none;
-  border-bottom: 2px solid var(--text);
-  padding-bottom: 2px;
+  transition: background-color 0.25s ease;
+}
+
+.case-visit:hover {
+  background: color-mix(in srgb, var(--text) 12%, transparent);
 }
 
 .case-cta {
-  padding: 36px 28px;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: var(--bg-alt);
+  margin-top: 16px;
+  padding: 56px 0 0;
+  border-top: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -584,17 +753,32 @@ main {
   gap: 10px;
 }
 
+.case .case-cta h2 {
+  margin-bottom: 0;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+}
+
+.case-cta p {
+  max-width: 460px;
+  color: var(--text-dim);
+}
+
 .case-cta .cta {
   animation: none;
 }
 
 @media (max-width: 600px) {
+  .page {
+    --header-h: 72px;
+  }
+
   .header {
-    padding: 16px 20px;
+    padding: 0 20px;
   }
 
   .hero {
-    padding: 64px 20px 56px;
+    padding: 40px 20px 56px;
   }
 
   .hero-logo {
@@ -614,11 +798,29 @@ main {
   }
 
   .work {
-    padding: 56px 20px 64px;
+    padding: 40px 20px 72px;
+    gap: 32px;
+  }
+
+  .work h2 {
+    font-size: 26px;
+  }
+
+  .services {
+    padding: 40px 20px 40px;
+    gap: 32px;
+  }
+
+  .services h2 {
+    font-size: 26px;
+  }
+
+  .service-card {
+    padding: 22px 20px;
   }
 
   .work-body {
-    padding: 20px;
+    padding: 18px 10px 10px;
   }
 
   .case {
@@ -627,6 +829,10 @@ main {
 
   .case h1 {
     font-size: 28px;
+  }
+
+  .case-cta {
+    padding-top: 40px;
   }
 }
 
@@ -655,8 +861,17 @@ main {
     transform: none;
   }
 
-  .work-card {
+  .work-card,
+  .work-card .work-shot img,
+  .work-arrow,
+  .service-card,
+  .service-arrow,
+  .case-visit {
     transition: none;
+  }
+
+  .work-card:hover .work-shot img {
+    transform: none;
   }
 }
 

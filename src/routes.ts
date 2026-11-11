@@ -8,14 +8,17 @@ import AGB from './pages/AGB.vue'
 import Datenschutz from './pages/Datenschutz.vue'
 import CookieSettings from './pages/CookieSettings.vue'
 import SeelSchreibwaren from './pages/SeelSchreibwaren.vue'
+import ServicePage from './pages/ServicePage.vue'
+import { SERVICES } from './services'
 
-const pages: { path: string; component: Component }[] = [
+const pages: { path: string; component: Component; props?: Record<string, unknown> }[] = [
   { path: '/', component: Home },
   { path: '/impressum', component: Impressum },
   { path: '/agb', component: AGB },
   { path: '/datenschutz', component: Datenschutz },
   { path: '/cookie-einstellungen', component: CookieSettings },
   { path: '/work/seel-schreibwaren', component: SeelSchreibwaren },
+  ...SERVICES.map(({ id, path }) => ({ path, component: ServicePage, props: { id } })),
 ]
 
 // Every page exists once per language: English at /<page>, German at
@@ -26,7 +29,11 @@ export const routes: RouteRecordRaw[] = [
     path: '/',
     component: Layout,
     children: LANGUAGES.flatMap((lang) =>
-      pages.map(({ path, component }) => ({ path: localizePath(path, lang), component })),
+      pages.map(({ path, component, props }) => ({
+        path: localizePath(path, lang),
+        component,
+        props,
+      })),
     ),
   },
 ]

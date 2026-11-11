@@ -30,6 +30,7 @@
     "back": "Zurück zur Startseite"
   },
   "seo": {
+    "organization": "Deuy Digital ist ein Softwareteam aus Heilbronn. Wir entwickeln individuelle Software, E-Commerce- und Shopify-Lösungen sowie KI-Lösungen für Unternehmen in der Region Heilbronn-Franken und darüber hinaus.",
     "home": {
       "title": "Deuy Digital — Digitale Lösungen, richtig gemacht.",
       "description": "Deuy Digital entwickelt klare, moderne digitale Produkte für Unternehmen, die schnell vorankommen wollen. Kontakt: info@deuy.digital."
@@ -49,6 +50,20 @@
     "cookies": {
       "title": "Cookie-Einstellungen — Deuy Digital",
       "description": "Einwilligung in Google Analytics erteilen oder widerrufen."
+    },
+    "services": {
+      "custom": {
+        "title": "Individuelle Softwareentwicklung in Heilbronn — Deuy Digital",
+        "description": "Individuelle Softwareentwicklung in Heilbronn: Webanwendungen, Backends und Schnittstellen nach Maß. Persönlich vor Ort, gehostet in Europa. Jetzt Kontakt aufnehmen."
+      },
+      "ecommerce": {
+        "title": "E-Commerce & Shopify in Heilbronn — Deuy Digital",
+        "description": "E-Commerce- und Shopify-Lösungen aus Heilbronn: Shop-Einrichtung, Theme-Entwicklung, eigene Apps, individuelle Bestellprozesse, Schnittstellen und Hosting in Europa."
+      },
+      "ai": {
+        "title": "KI-Lösungen & KI-Entwicklung in Heilbronn — Deuy Digital",
+        "description": "KI-Lösungen aus Heilbronn: Dokumentenanalyse, Assistenten und Automatisierung, integriert in Ihre Software und gehostet in der EU. Von den Machern von Vertragbot."
+      }
     },
     "work": {
       "seel": {
@@ -86,6 +101,155 @@
       "accept": "Google Analytics erlauben",
       "reject": "Google Analytics ablehnen / widerrufen",
       "moreInfo": "Weitere Informationen finden Sie in unserer <privacyLink>Datenschutzerklärung</privacyLink>."
+    }
+  },
+  "services": {
+    "heading": "Leistungen",
+    "intro": "Softwareentwicklung aus Heilbronn für Unternehmen in der Region Heilbronn-Franken und darüber hinaus.",
+    "more": "Mehr erfahren",
+    "otherHeading": "Weitere Leistungen",
+    "reference": {
+      "heading": "Referenz aus Heilbronn",
+      "body": "Für Seel Schreibwaren in der Heilbronner Innenstadt bauen und betreiben wir seit 2022 die Website, das CMS und ein eigenes Backend.",
+      "link": "Zur Fallstudie"
+    },
+    "cta": {
+      "heading": "Sprechen wir über Ihr Projekt",
+      "body": "Schreiben Sie uns kurz, was Sie vorhaben. Wir melden uns mit einer ehrlichen Einschätzung zurück.",
+      "button": "Kontakt aufnehmen"
+    },
+    "items": {
+      "custom": {
+        "name": "Individuelle Software",
+        "summary": "Webanwendungen, Backends und Schnittstellen, zugeschnitten auf Ihre Abläufe, wenn Standardsoftware nicht passt.",
+        "title": "Individuelle Softwareentwicklung in Heilbronn",
+        "subtitle": "Maßgeschneiderte Webanwendungen, Backends und Schnittstellen für Unternehmen, deren Abläufe in keine Standardsoftware passen.",
+        "sections": [
+          {
+            "heading": "Wann sich individuelle Software lohnt",
+            "paragraphs": [
+              "Standardsoftware deckt vieles ab, bis ein Ablauf zu Ihrem Unternehmen gehört und zu keinem anderen. Dann entstehen Excel-Listen, doppelte Dateneingaben und Umwege. Eine individuelle Lösung bildet genau diesen Ablauf ab und verbindet die Systeme, die Sie bereits nutzen."
+            ]
+          },
+          {
+            "heading": "Was wir entwickeln",
+            "items": [
+              "Webanwendungen und Kundenportale, die im Browser und auf dem Smartphone funktionieren.",
+              "Backends und APIs, die Formulare, Bestellungen oder interne Prozesse verarbeiten.",
+              "Schnittstellen zwischen bestehenden Systemen, etwa Onlineshop, Warenwirtschaft, Buchhaltung oder CRM.",
+              "Digitalisierung von Papierprozessen: vom Formular am Tresen zur strukturierten Online-Anfrage.",
+              "KI-Funktionen, wo sie wirklich Arbeit sparen, auf Wunsch mit Modellen und Servern in der EU."
+            ]
+          },
+          {
+            "heading": "So arbeiten wir",
+            "paragraphs": [
+              "Wir beginnen mit einem Gespräch über Ihren Ablauf, nicht mit einer Technologie. Daraus entsteht ein überschaubarer erster Umfang, den Sie früh testen können. Danach entwickeln wir in kleinen Schritten weiter und übernehmen auf Wunsch Hosting, Wartung und Weiterentwicklung.",
+              "Wir setzen auf TypeScript und moderne Web-Frameworks und hosten bevorzugt bei europäischen Anbietern, damit Ihre Daten in der EU bleiben."
+            ]
+          },
+          {
+            "heading": "Ihr Softwarepartner in Heilbronn",
+            "paragraphs": [
+              "Deuy Digital sitzt in Heilbronn. Für Unternehmen aus Heilbronn, Neckarsulm und der Region Heilbronn-Franken heißt das: kurze Wege und persönliche Termine vor Ort. Projekte außerhalb der Region betreuen wir remote."
+            ]
+          }
+        ]
+      },
+      "ecommerce": {
+        "name": "E-Commerce & Shopify",
+        "summary": "Onlineshops und Bestellprozesse, die zu Ihrem Geschäft passen: mit Shopify, individuell entwickelt oder kombiniert.",
+        "title": "E-Commerce- und Shopify-Lösungen aus Heilbronn",
+        "subtitle": "Onlineshops, Shopify-Entwicklung und die Technik dahinter für Händler und Unternehmen, die online verkaufen wollen.",
+        "sections": [
+          {
+            "heading": "Online verkaufen, so wie Ihr Geschäft funktioniert",
+            "paragraphs": [
+              "Nicht jedes Geschäft braucht denselben Onlineshop. Manchmal ist ein Shopify-Shop der schnellste und günstigste Weg. Manchmal braucht es einen individuellen Bestellprozess, etwa Vorbestellung mit Abholung, Konfiguratoren oder B2B-Bestellungen mit kundenindividuellen Preisen. Wir beraten Sie, welcher Weg zu Sortiment, Budget und Team passt, und setzen ihn um."
+            ]
+          },
+          {
+            "heading": "Shopify-Entwicklung",
+            "paragraphs": [
+              "Mit Shopify sind Sie schnell online: Hosting, Bezahlung und Checkout sind bereits gelöst. Wir kümmern uns um alles, worin sich Ihr Shop von anderen unterscheiden soll."
+            ],
+            "items": [
+              "Einrichtung und Konfiguration neuer Shopify-Shops, inklusive Produkten, Versand, Steuern und Zahlungsarten.",
+              "Theme-Anpassung und individuelle Theme-Entwicklung passend zu Ihrer Marke.",
+              "Eigene Shopify-Apps und Erweiterungen für Funktionen, die es nicht von der Stange gibt.",
+              "Migration bestehender Shops zu Shopify, mit Produkten, Kunden und Weiterleitungen.",
+              "Headless-Storefronts, wenn der Shop besonders schnell oder besonders individuell sein soll."
+            ]
+          },
+          {
+            "heading": "Individuelle E-Commerce-Lösungen",
+            "paragraphs": [
+              "Wo ein Standard-Shop nicht reicht, entwickeln wir die fehlenden Teile oder die ganze Lösung."
+            ],
+            "items": [
+              "Individuelle Bestell- und Anfrageprozesse, etwa Click & Collect, Vorbestellungen oder Konfiguratoren.",
+              "Anbindung an Zahlungsanbieter, Versanddienstleister, Warenwirtschaft, Buchhaltung und Newsletter-Tools.",
+              "Inhalte und Produktdaten über ein CMS, das Ihr Team selbst pflegen kann.",
+              "Schnelle Ladezeiten, technisches SEO und lokale Auffindbarkeit.",
+              "Hosting in Europa sowie laufender Betrieb und Weiterentwicklung."
+            ]
+          },
+          {
+            "heading": "Vom Ladengeschäft zum Onlinekanal",
+            "paragraphs": [
+              "Für Seel Schreibwaren in Heilbronn haben wir einen Papierprozess online gebracht: Eltern laden die Schulliste ihres Kindes hoch und wählen Abholung oder Lieferung, das Geschäft erhält alles als strukturierte Anfrage. Solche Lösungen entstehen, wenn man den Ablauf im Laden versteht und nicht nur einen Warenkorb installiert."
+            ]
+          },
+          {
+            "heading": "E-Commerce- und Shopify-Partner in Heilbronn",
+            "paragraphs": [
+              "Wir sind ein Softwareteam aus Heilbronn und kommen für ein erstes Gespräch gern zu Ihnen, in Heilbronn, Neckarsulm und der Region Heilbronn-Franken. Sie arbeiten direkt mit den Entwicklern, die Ihren Shop bauen und auch die Sonderfälle lösen."
+            ]
+          }
+        ]
+      },
+      "ai": {
+        "name": "KI-Lösungen",
+        "summary": "KI, die echte Arbeit abnimmt: Dokumente auslesen, Fragen beantworten, Abläufe automatisieren, so wie in unserem eigenen Produkt Vertragbot.",
+        "title": "KI-Lösungen aus Heilbronn",
+        "subtitle": "Wir bauen KI in Ihre Software und Abläufe ein: dort, wo sie spürbar Arbeit spart, und so, dass Ihre Daten in Europa bleiben.",
+        "sections": [
+          {
+            "heading": "KI, die im Alltag etwas bringt",
+            "paragraphs": [
+              "Die meisten Unternehmen brauchen kein eigenes KI-Modell, sondern eine Antwort auf eine einfache Frage: Welche wiederkehrende Arbeit kann uns eine KI abnehmen? Oft sind das Dokumente, die gelesen, Anfragen, die sortiert, oder Informationen, die aus verschiedenen Quellen zusammengesucht werden müssen. Wir finden mit Ihnen diese Stellen und bauen die passende Lösung."
+            ]
+          },
+          {
+            "heading": "Was wir bauen",
+            "items": [
+              "Dokumentenanalyse: Verträge, Rechnungen oder Formulare automatisch auslesen und die wichtigen Angaben strukturiert erfassen.",
+              "Assistenten und Chatbots, die Fragen auf Grundlage Ihrer eigenen Dokumente und Daten beantworten.",
+              "Automatisierung wiederkehrender Aufgaben, etwa Anfragen einordnen, Texte zusammenfassen oder Daten übertragen.",
+              "KI-Funktionen in bestehender Software, Websites und Onlineshops.",
+              "Anbindung Ihrer Systeme an KI-Assistenten, zum Beispiel über einen MCP-Server.",
+              "Betrieb mit KI-Modellen und Servern in der EU, wenn der Datenschutz es verlangt."
+            ]
+          },
+          {
+            "heading": "So gehen wir vor",
+            "paragraphs": [
+              "Wir starten klein: mit einem konkreten Anwendungsfall und einem Prototyp, an dem Sie sehen, ob die KI in Ihrem Alltag zuverlässig genug arbeitet. Erst wenn das überzeugt, bauen wir die Lösung aus und binden sie in Ihre Systeme ein. Und wir sagen es offen, wenn eine einfache Regel oder ein Formular die bessere Lösung ist als KI."
+            ]
+          },
+          {
+            "heading": "KI-Entwicklung vor Ort in Heilbronn",
+            "paragraphs": [
+              "Deuy Digital ist ein Softwareteam aus Heilbronn. Unternehmen aus Heilbronn, Neckarsulm und der Region Heilbronn-Franken begleiten wir persönlich vor Ort, vom ersten Gespräch über den Prototyp bis zum laufenden Betrieb."
+            ]
+          }
+        ],
+        "reference": {
+          "heading": "Unser eigenes KI-Produkt: Vertragbot",
+          "body": "KI setzen wir nicht nur für Kunden ein, wir betreiben damit ein eigenes Produkt. Mit Vertragbot laden Nutzer bestehende Verträge hoch, die KI liest Parteien, Laufzeiten und Kündigungsfristen aus und beantwortet Fragen zum Vertrag; unterschrieben wird direkt in der App. Vertragbot läuft im Web, auf iOS und Android, auf europäischen Servern mit KI aus der EU. Die Erfahrung daraus fließt in jedes Kundenprojekt ein.",
+          "link": "vertragbot.de besuchen"
+        }
+      }
     }
   },
   "work": {

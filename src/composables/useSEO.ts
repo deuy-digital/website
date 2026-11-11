@@ -1,4 +1,4 @@
-import { computed } from 'vue'
+import { computed, toValue, type MaybeRefOrGetter } from 'vue'
 import { useHead } from '@unhead/vue'
 import { useTranslation } from 'i18next-vue'
 import { DEFAULT_LANGUAGE, LANGUAGES, localizePath } from '../i18n'
@@ -6,24 +6,26 @@ import { useLocale } from './useLocale'
 
 interface SEOOptions {
   /** i18n key prefix, e.g. 'seo.home' → seo.home.title / seo.home.description */
-  key: string
+  key: MaybeRefOrGetter<string>
   /** English path of the page, e.g. '/impressum'. */
-  path: string
+  path: MaybeRefOrGetter<string>
 }
 
-const SITE_URL = 'https://deuy.digital'
+export const SITE_URL = 'https://deuy.digital'
 const SITE_NAME = 'Deuy Digital'
 const OG_IMAGE = `${SITE_URL}/og-image.png`
 const OG_LOCALES = { en: 'en_US', de: 'de_DE' } as const
 
 // Rendered into each page's static HTML at build time (vite-ssg), then kept
 // up to date on client-side navigation.
-export function useSEO({ key, path }: SEOOptions) {
+export function useSEO(options: SEOOptions) {
   const { t } = useTranslation()
   const { language } = useLocale()
 
   useHead(
     computed(() => {
+      const key = toValue(options.key)
+      const path = toValue(options.path)
       const title = t(`${key}.title`)
       const description = t(`${key}.description`)
       const url = `${SITE_URL}${localizePath(path, language.value)}`

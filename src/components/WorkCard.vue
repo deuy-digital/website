@@ -1,7 +1,6 @@
 <script setup lang="ts">
-// One card in the "Selected work" / "Our product" sections: a browser-framed
-// screenshot plus name, meta line, summary and tags. Links internally (`to`)
-// or externally (`href`).
+// One card in the "Selected work" section: a screenshot plus name, meta line,
+// summary and tags. Links internally (`to`) or externally (`href`).
 defineProps<{
   to?: string
   href?: string
@@ -33,7 +32,10 @@ defineProps<{
       <ul class="work-tags">
         <li v-for="tag in tags" :key="tag">{{ tag }}</li>
       </ul>
-      <span class="work-more">{{ cta }} {{ href ? '↗' : '→' }}</span>
+      <span class="work-more">
+        {{ cta }}
+        <span class="work-arrow" aria-hidden="true">{{ href ? '↗' : '→' }}</span>
+      </span>
     </div>
   </component>
 </template>

@@ -5,7 +5,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/" />
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,9 +14,63 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/" />
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://deuy.digital/softwareentwicklung-heilbronn</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/softwareentwicklung-heilbronn" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/softwareentwicklung-heilbronn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/softwareentwicklung-heilbronn" />
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://deuy.digital/de/softwareentwicklung-heilbronn</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/softwareentwicklung-heilbronn" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/softwareentwicklung-heilbronn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/softwareentwicklung-heilbronn" />
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://deuy.digital/ki-loesungen-heilbronn</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/ki-loesungen-heilbronn" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/ki-loesungen-heilbronn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/ki-loesungen-heilbronn" />
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://deuy.digital/de/ki-loesungen-heilbronn</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/ki-loesungen-heilbronn" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/ki-loesungen-heilbronn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/ki-loesungen-heilbronn" />
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://deuy.digital/e-commerce-heilbronn</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/e-commerce-heilbronn" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/e-commerce-heilbronn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/e-commerce-heilbronn" />
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://deuy.digital/de/e-commerce-heilbronn</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://deuy.digital/e-commerce-heilbronn" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://deuy.digital/de/e-commerce-heilbronn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://deuy.digital/e-commerce-heilbronn" />
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://deuy.digital/work/seel-schreibwaren</loc>

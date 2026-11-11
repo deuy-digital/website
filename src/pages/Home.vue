@@ -4,9 +4,11 @@ import { useTranslation } from 'i18next-vue'
 import Logo from '../components/Logo.vue'
 import Reveal from '../components/Reveal.vue'
 import WorkCard from '../components/WorkCard.vue'
+import ServiceIcon from '../components/icons/ServiceIcon.vue'
 import { useLocale } from '../composables/useLocale'
 import { useSEO } from '../composables/useSEO'
 import { useReveal } from '../composables/useReveal'
+import { SERVICES } from '../services'
 
 const EMAIL = 'info@deuy.digital'
 
@@ -27,6 +29,29 @@ useSEO({ key: 'seo.home', path: '/' })
     <a class="cta" :href="`mailto:${EMAIL}`">
       {{ t('hero.cta') }}
     </a>
+  </section>
+
+  <section id="services" class="services">
+    <Reveal>
+      <h2>{{ t('services.heading') }}</h2>
+      <p class="work-intro">{{ t('services.intro') }}</p>
+    </Reveal>
+    <Reveal class="services-grid">
+      <RouterLink
+        v-for="service in SERVICES"
+        :key="service.id"
+        :to="localePath(service.path)"
+        class="service-card"
+      >
+        <span class="service-icon"><ServiceIcon :id="service.id" /></span>
+        <h3>{{ t(`services.items.${service.id}.name`) }}</h3>
+        <p>{{ t(`services.items.${service.id}.summary`) }}</p>
+        <span class="service-more">
+          {{ t('services.more') }}
+          <span class="service-arrow" aria-hidden="true">→</span>
+        </span>
+      </RouterLink>
+    </Reveal>
   </section>
 
   <section id="work" class="work">
