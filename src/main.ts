@@ -3,6 +3,9 @@ import I18NextVue from 'i18next-vue'
 import i18n, { languageFromPath } from './i18n'
 import { routes } from './routes'
 import App from './App.vue'
+// Self-hosted (bundled) fonts: no request to a third-party font CDN.
+import '@fontsource-variable/bricolage-grotesque/wght.css'
+import '@fontsource-variable/instrument-sans/wght.css'
 import './index.css'
 
 declare global {
@@ -21,7 +24,9 @@ export const createApp = ViteSSG(
   App,
   {
     routes,
-    scrollBehavior: () => ({ top: 0 }),
+    // Header links point at sections of the home page (/#services); the
+    // header offset comes from scroll-margin-top in App.css.
+    scrollBehavior: (to) => (to.hash ? { el: to.hash, behavior: 'smooth' } : { top: 0 }),
   },
   ({ app, router, routePath }) => {
     const path = import.meta.env.SSR ? (routePath ?? '/') : window.location.pathname

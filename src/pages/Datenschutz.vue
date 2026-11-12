@@ -44,7 +44,7 @@ useSEO({ key: 'seo.datenschutz', path: '/datenschutz' })
       <h3>3.1 Server-Logs (Hosting)</h3>
       <p>Daten: IP-Adresse, Zeitstempel, aufgerufene URL, HTTP-Statuscode, Referrer, User-Agent.</p>
       <p>Zweck: Technische Bereitstellung und Sicherheit der Website.</p>
-      <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO — berechtigtes Interesse am sicheren und stabilen Betrieb der Website.</p>
+      <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am sicheren und stabilen Betrieb der Website).</p>
       <p>Speicherdauer: Gemäß den Angaben unseres Hosting-Anbieters (siehe Abschnitt 4).</p>
 
       <h3>3.2 Kontaktaufnahme per E-Mail</h3>
@@ -60,7 +60,7 @@ useSEO({ key: 'seo.datenschutz', path: '/datenschutz' })
       <p>Daten: Ihre gewählte Design-Einstellung (hell/dunkel/System) und Spracheinstellung (Deutsch/Englisch).</p>
       <p>Zweck: Speicherung Ihrer Präferenzen für zukünftige Besuche.</p>
       <p>
-        Rechtsgrundlage: § 25 Abs. 2 Nr. 2 TDDDG — unbedingt erforderlich, um einen von Ihnen ausdrücklich
+        Rechtsgrundlage: § 25 Abs. 2 Nr. 2 TDDDG. Die Speicherung ist unbedingt erforderlich, um einen von Ihnen ausdrücklich
         gewünschten Dienst (Beibehaltung Ihrer Einstellungen) bereitzustellen; eine Einwilligung ist hierfür nicht
         erforderlich. Dasselbe gilt für die Speicherung Ihrer Cookie-Auswahl (Schlüssel <code>deuy_consent</code>,
         inkl. Zeitpunkt der Entscheidung als Nachweis nach Art. 7 Abs. 1 DSGVO).
@@ -69,8 +69,8 @@ useSEO({ key: 'seo.datenschutz', path: '/datenschutz' })
 
       <h3>3.4 Webanalyse mit Google Analytics 4 (nur mit Einwilligung)</h3>
       <p>
-        Auf dieser Website setzen wir — ausschließlich nach Ihrer ausdrücklichen Einwilligung über unser
-        Cookie-Banner — Google Analytics 4 ein, einen Webanalysedienst der Google Ireland Limited, Gordon House,
+        Auf dieser Website setzen wir, ausschließlich nach Ihrer ausdrücklichen Einwilligung über unser
+        Cookie-Banner, Google Analytics 4 ein, einen Webanalysedienst der Google Ireland Limited, Gordon House,
         Barrow Street, Dublin 4, Irland („Google“). Ohne Einwilligung wird das Google-Analytics-Skript nicht
         geladen, es werden keine Cookies gesetzt und keine Daten an Google übermittelt.
       </p>
@@ -87,7 +87,7 @@ useSEO({ key: 'seo.datenschutz', path: '/datenschutz' })
         geräteübergreifendes Tracking, Remarketing und die Personalisierung von Werbung sind deaktiviert.
       </p>
       <p>
-        Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO — Einwilligung; § 25 Abs. 1 TDDDG für das Setzen und
+        Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung); § 25 Abs. 1 TDDDG für das Setzen und
         Auslesen von Cookies auf Ihrem Endgerät.
       </p>
       <p>
@@ -149,7 +149,7 @@ useSEO({ key: 'seo.datenschutz', path: '/datenschutz' })
         <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
         <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
         <li>
-          Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO) — für Google
+          Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO), für Google
           Analytics jederzeit über die <RouterLink :to="localePath('/cookie-einstellungen')">Cookie-Einstellungen</RouterLink>
         </li>
       </ul>

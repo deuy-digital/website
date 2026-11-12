@@ -1,5 +1,7 @@
 {
   "nav": {
+    "services": "Leistungen",
+    "work": "Projekte",
     "contact": "Kontakt"
   },
   "theme": {
@@ -11,11 +13,13 @@
   "hero": {
     "tagline": "Digitale Lösungen, richtig gemacht.",
     "subtitle": "Wir entwickeln klare, moderne digitale Produkte für Unternehmen, die schnell vorankommen wollen.",
-    "cta": "Kontakt aufnehmen"
+    "cta": "Kontakt aufnehmen",
+    "eyebrow": "Softwarestudio aus Heilbronn",
+    "secondary": "Projekte ansehen"
   },
   "contact": {
     "heading": "Kontaktieren Sie uns",
-    "body": "Haben Sie ein Projekt im Kopf oder eine Frage an uns? Schreiben Sie uns eine E-Mail — wir freuen uns auf Ihre Nachricht.",
+    "body": "Haben Sie ein Projekt im Kopf oder eine Frage an uns? Schreiben Sie uns eine E-Mail. Wir freuen uns auf Ihre Nachricht.",
     "emailLabel": "E-Mail",
     "cta": "E-Mail schreiben"
   },
@@ -32,43 +36,43 @@
   "seo": {
     "organization": "Deuy Digital ist ein Softwareteam aus Heilbronn. Wir entwickeln individuelle Software, E-Commerce- und Shopify-Lösungen sowie KI-Lösungen für Unternehmen in der Region Heilbronn-Franken und darüber hinaus.",
     "home": {
-      "title": "Deuy Digital — Digitale Lösungen, richtig gemacht.",
+      "title": "Deuy Digital | Digitale Lösungen, richtig gemacht.",
       "description": "Deuy Digital entwickelt klare, moderne digitale Produkte für Unternehmen, die schnell vorankommen wollen. Kontakt: info@deuy.digital."
     },
     "impressum": {
-      "title": "Impressum — Deuy Digital",
+      "title": "Impressum | Deuy Digital",
       "description": "Impressum und Anbieterkennzeichnung der Deuy Digital UG (haftungsbeschränkt) gemäß § 5 TMG."
     },
     "agb": {
-      "title": "AGB — Deuy Digital",
+      "title": "AGB | Deuy Digital",
       "description": "Allgemeine Geschäftsbedingungen für digitale Dienstleistungen der Deuy Digital UG (haftungsbeschränkt)."
     },
     "datenschutz": {
-      "title": "Datenschutz — Deuy Digital",
+      "title": "Datenschutz | Deuy Digital",
       "description": "Datenschutzerklärung der Deuy Digital UG (haftungsbeschränkt) gemäß Art. 13 DSGVO."
     },
     "cookies": {
-      "title": "Cookie-Einstellungen — Deuy Digital",
+      "title": "Cookie-Einstellungen | Deuy Digital",
       "description": "Einwilligung in Google Analytics erteilen oder widerrufen."
     },
     "services": {
       "custom": {
-        "title": "Individuelle Softwareentwicklung in Heilbronn — Deuy Digital",
+        "title": "Individuelle Softwareentwicklung in Heilbronn | Deuy Digital",
         "description": "Individuelle Softwareentwicklung in Heilbronn: Webanwendungen, Backends und Schnittstellen nach Maß. Persönlich vor Ort, gehostet in Europa. Jetzt Kontakt aufnehmen."
       },
       "ecommerce": {
-        "title": "E-Commerce & Shopify in Heilbronn — Deuy Digital",
+        "title": "E-Commerce & Shopify in Heilbronn | Deuy Digital",
         "description": "E-Commerce- und Shopify-Lösungen aus Heilbronn: Shop-Einrichtung, Theme-Entwicklung, eigene Apps, individuelle Bestellprozesse, Schnittstellen und Hosting in Europa."
       },
       "ai": {
-        "title": "KI-Lösungen & KI-Entwicklung in Heilbronn — Deuy Digital",
+        "title": "KI-Lösungen & KI-Entwicklung in Heilbronn | Deuy Digital",
         "description": "KI-Lösungen aus Heilbronn: Dokumentenanalyse, Assistenten und Automatisierung, integriert in Ihre Software und gehostet in der EU. Von den Machern von Vertragbot."
       }
     },
     "work": {
       "seel": {
-        "title": "Seel Schreibwaren — Fallstudie — Deuy Digital",
-        "description": "Website, Headless CMS, eigenes Backend und souveränes europäisches Hosting für Seel Schreibwaren in Heilbronn — seit 2022 von Deuy Digital gebaut und betrieben."
+        "title": "Seel Schreibwaren | Fallstudie | Deuy Digital",
+        "description": "Website, Headless CMS, eigenes Backend und souveränes europäisches Hosting für Seel Schreibwaren in Heilbronn, seit 2022 von Deuy Digital gebaut und betrieben."
       }
     }
   },
@@ -96,7 +100,7 @@
       "status": {
         "granted": "Aktueller Status: Google Analytics ist aktiviert.",
         "denied": "Aktueller Status: Google Analytics ist deaktiviert.",
-        "undecided": "Aktueller Status: Sie haben noch keine Auswahl getroffen — Google Analytics ist deaktiviert."
+        "undecided": "Aktueller Status: Sie haben noch keine Auswahl getroffen. Google Analytics ist deaktiviert."
       },
       "accept": "Google Analytics erlauben",
       "reject": "Google Analytics ablehnen / widerrufen",
@@ -154,7 +158,8 @@
               "Deuy Digital sitzt in Heilbronn. Für Unternehmen aus Heilbronn, Neckarsulm und der Region Heilbronn-Franken heißt das: kurze Wege und persönliche Termine vor Ort. Projekte außerhalb der Region betreuen wir remote."
             ]
           }
-        ]
+        ],
+        "headline": "Software, die zu Ihren Abläufen passt."
       },
       "ecommerce": {
         "name": "E-Commerce & Shopify",
@@ -206,7 +211,8 @@
               "Wir sind ein Softwareteam aus Heilbronn und kommen für ein erstes Gespräch gern zu Ihnen, in Heilbronn, Neckarsulm und der Region Heilbronn-Franken. Sie arbeiten direkt mit den Entwicklern, die Ihren Shop bauen und auch die Sonderfälle lösen."
             ]
           }
-        ]
+        ],
+        "headline": "Online verkaufen, so wie Ihr Geschäft funktioniert."
       },
       "ai": {
         "name": "KI-Lösungen",
@@ -248,9 +254,11 @@
           "heading": "Unser eigenes KI-Produkt: Vertragbot",
           "body": "KI setzen wir nicht nur für Kunden ein, wir betreiben damit ein eigenes Produkt. Mit Vertragbot laden Nutzer bestehende Verträge hoch, die KI liest Parteien, Laufzeiten und Kündigungsfristen aus und beantwortet Fragen zum Vertrag; unterschrieben wird direkt in der App. Vertragbot läuft im Web, auf iOS und Android, auf europäischen Servern mit KI aus der EU. Die Erfahrung daraus fließt in jedes Kundenprojekt ein.",
           "link": "vertragbot.de besuchen"
-        }
+        },
+        "headline": "KI, die echte Arbeit abnimmt."
       }
-    }
+    },
+    "title": "Was wir bauen."
   },
   "work": {
     "heading": "Ausgewählte Projekte",
@@ -266,7 +274,7 @@
     },
     "cta": {
       "heading": "Brauchen Sie etwas Ähnliches?",
-      "body": "Erzählen Sie uns von Ihrem Unternehmen — wir sagen Ihnen, was wir bauen würden.",
+      "body": "Erzählen Sie uns von Ihrem Unternehmen und wir sagen Ihnen, was wir bauen würden.",
       "button": "Kontakt aufnehmen"
     },
     "seel": {
@@ -274,7 +282,7 @@
       "industry": "Schreibwaren & Künstlerbedarf",
       "city": "Heilbronn",
       "since": "2022",
-      "summary": "Website, CMS, eigenes Formular-Backend, Hosting und laufender Betrieb — seit 2022.",
+      "summary": "Website, CMS, eigenes Formular-Backend, Hosting und laufender Betrieb seit 2022.",
       "tags": [
         "Next.js",
         "Headless CMS",
@@ -282,17 +290,17 @@
         "DE / EN",
         "Lokales SEO"
       ],
-      "subtitle": "Ein Schreibwarengeschäft im Herzen von Heilbronn — die Website, das CMS, ein eigenes Backend, gehostet in Europa.",
+      "subtitle": "Ein Schreibwarengeschäft im Herzen von Heilbronn: die Website, das CMS, ein eigenes Backend, gehostet in Europa.",
       "client": {
         "heading": "Der Kunde",
-        "body": "Seel Schreibwaren verkauft Schreibwaren, Bürobedarf, Künstler- und Bastelbedarf in der Heilbronner Innenstadt. Gewünscht war eine Website, die das Team selbst aktuell halten kann — Neuheiten, Veranstaltungen, Sortiment — ohne für jede Änderung einen Entwickler zu brauchen."
+        "body": "Seel Schreibwaren verkauft Schreibwaren, Bürobedarf, Künstler- und Bastelbedarf in der Heilbronner Innenstadt. Gewünscht war eine Website, die das Team selbst aktuell halten kann, mit Neuheiten, Veranstaltungen und Sortiment, ohne für jede Änderung einen Entwickler zu brauchen."
       },
       "built": {
         "heading": "Was wir gebaut haben",
         "items": [
           "Eine schnelle, statisch generierte Website (Next.js) auf Deutsch und Englisch mit Seiten für Neuheiten, Veranstaltungen, Sortiment, Service, Team, Karriere und mehr.",
           "Ein selbst gehostetes Headless CMS, mit dem das Geschäft seine Inhalte selbst pflegt. Änderungen werden automatisch nach Zeitplan veröffentlicht, alle Bilder beim Build optimiert.",
-          "Der Schullisten-Service: ein Papierprozess, der online ging — mehr dazu unten.",
+          "Der Schullisten-Service: ein Papierprozess, der online ging. Mehr dazu unten.",
           "Lokales SEO: eigene Landingpages für Heilbronn und 19 Orte im Umkreis sowie strukturierte Metadaten auf jeder Seite."
         ]
       },
@@ -319,13 +327,13 @@
       },
       "hosting": {
         "heading": "Gehostet in Europa",
-        "body": "Der gesamte Stack — Website, CMS und Backend — läuft bei Scaleway, einem europäischen Cloud-Anbieter unter EU-Recht. Kunden- und Formulardaten verlassen Europa nicht, und nichts hängt von einem US-Hyperscaler ab. Digitale Souveränität von Anfang an, nicht als Zusatz."
+        "body": "Der gesamte Stack (Website, CMS und Backend) läuft bei Scaleway, einem europäischen Cloud-Anbieter unter EU-Recht. Kunden- und Formulardaten verlassen Europa nicht, und nichts hängt von einem US-Hyperscaler ab. Digitale Souveränität von Anfang an, nicht als Zusatz."
       },
       "schoolList": {
         "heading": "Vom Zettel zur Online-Bestellung",
         "paragraphs": [
           "Jeden Sommer geben die Schulen der Region eine Liste aus, was jedes Kind im neuen Schuljahr braucht. Früher brachten Eltern diesen Zettel ins Geschäft.",
-          "Heute fotografieren oder scannen sie die Liste und laden sie auf seel-schreibwaren.de hoch, ergänzen die wichtigen Details — Name des Kindes, Links- oder Rechtshänder, Farb- und Lieblingstier-Wünsche, ob die Sachen beschriftet werden sollen — und wählen Abholung oder Lieferung. Das Geschäft bekommt alles gebündelt per E-Mail, stellt das Set zusammen, und die Eltern erhalten automatisch eine Bestätigung.",
+          "Heute fotografieren oder scannen sie die Liste und laden sie auf seel-schreibwaren.de hoch. Sie ergänzen die wichtigen Details: Name des Kindes, Links- oder Rechtshänder, Farb- und Lieblingstier-Wünsche, ob die Sachen beschriftet werden sollen. Dann wählen sie Abholung oder Lieferung. Das Geschäft bekommt alles gebündelt per E-Mail, stellt das Set zusammen, und die Eltern erhalten automatisch eine Bestätigung.",
           "Für die Eltern eine kleine Änderung, für das Geschäft eine große: Die geschäftigsten Wochen des Jahres kommen jetzt als strukturierte Anfragen an statt als Zettel an der Theke."
         ]
       }
@@ -333,13 +341,14 @@
     "labels": {
       "client": "Kundenprojekt",
       "product": "Unser Produkt"
-    }
+    },
+    "title": "Gebaut, live, in Betrieb."
   },
   "product": {
     "vertragbot": {
       "name": "Vertragbot",
       "meta": "Vertragsverwaltung",
-      "summary": "Bestehende Verträge hochladen, von der KI Parteien, Laufzeiten und Kündigungsfristen auslesen lassen, Fragen stellen, unterschreiben — alles auf europäischen Servern mit KI aus der EU.",
+      "summary": "Bestehende Verträge hochladen, von der KI Parteien, Laufzeiten und Kündigungsfristen auslesen lassen, Fragen stellen, unterschreiben. Alles auf europäischen Servern mit KI aus der EU.",
       "tags": [
         "KI",
         "E-Signatur",
@@ -349,6 +358,66 @@
         "DE / EN / ES"
       ],
       "cta": "vertragbot.de besuchen"
+    }
+  },
+  "story": {
+    "statement": "Jedes Unternehmen hat einen Ablauf, der nur ihm gehört. Dort endet Standardsoftware. Und dort fangen wir an.",
+    "approach": {
+      "eyebrow": "So arbeiten wir",
+      "title": "Vom ersten Gespräch bis zur laufenden Software.",
+      "steps": [
+        {
+          "title": "Erst zuhören",
+          "text": "Wir beginnen mit einem Gespräch über Ihren Ablauf, nicht über eine Technologie."
+        },
+        {
+          "title": "Klein anfangen",
+          "text": "Ein kleiner erster Umfang, den Sie früh testen können."
+        },
+        {
+          "title": "Bauen und betreiben",
+          "text": "Wir entwickeln in kleinen Schritten und übernehmen Hosting, Wartung und Weiterentwicklung."
+        }
+      ],
+      "values": [
+        {
+          "word": "Heilbronn",
+          "text": "Kurze Wege und persönliche Gespräche."
+        },
+        {
+          "word": "Europa",
+          "text": "Gehostet in der EU. Ihre Daten bleiben hier."
+        },
+        {
+          "word": "Direkt",
+          "text": "Sie arbeiten mit den Entwicklern, die Ihre Software bauen."
+        }
+      ]
+    },
+    "mock": {
+      "custom": {
+        "title": "Anfragen",
+        "new": "Neu",
+        "progress": "In Arbeit",
+        "done": "Erledigt"
+      },
+      "ecommerce": {
+        "title": "Schulliste",
+        "file": "liste.jpg",
+        "uploaded": "Hochgeladen",
+        "pickup": "Abholung",
+        "delivery": "Lieferung",
+        "send": "Bestellung senden"
+      },
+      "ai": {
+        "file": "Vertrag.pdf",
+        "parties": "Parteien",
+        "partiesValue": "2 erkannt",
+        "term": "Laufzeit",
+        "termValue": "24 Monate",
+        "notice": "Kündigungsfrist",
+        "noticeValue": "3 Monate"
+      }
     }
   }
 }

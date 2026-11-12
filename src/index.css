@@ -1,27 +1,57 @@
 :root {
-  --accent: #ffffff;
+  --font-body: 'Instrument Sans Variable', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Bricolage Grotesque Variable', var(--font-body);
 
-  font: 16px/1.6 system-ui, 'Segoe UI', Roboto, sans-serif;
+  font: 17px/1.5 var(--font-body);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+/* Warm paper and ink, with a deep green accent. */
+html[data-theme='light'] {
+  --bg: #fbf8f2;
+  --bg-alt: #f2ece1;
+  --surface: #ffffff;
+  --text: #1b1915;
+  --text-dim: #6a645a;
+  --border: #dcd4c6;
+  --link: #14624e;
+  --cta-bg: #14624e;
+  --cta-text: #ffffff;
+  --nav-bg: rgba(251, 248, 242, 0.78);
+  --shadow: 0 24px 60px -24px rgba(60, 45, 20, 0.28), 0 2px 8px rgba(60, 45, 20, 0.05);
+  /* The closing contact section inverts the page. */
+  --inv-bg: #103c31;
+  --inv-text: #f7f2e8;
+  --inv-dim: #b5cabd;
+  --inv-link: #7fe0bf;
 }
 
 html[data-theme='dark'] {
-  --bg: #1b1d23;
-  --bg-alt: #22242c;
-  --text: #f4f4f6;
-  --text-dim: #a4a7b3;
-  --border: #33353f;
+  --bg: #121110;
+  --bg-alt: #1c1a17;
+  --surface: #27241f;
+  --text: #f3efe8;
+  --text-dim: #a9a295;
+  --border: #39352e;
+  --link: #6fd9b6;
+  --cta-bg: #6fd9b6;
+  --cta-text: #0d2019;
+  --nav-bg: rgba(18, 17, 16, 0.78);
+  --shadow: 0 24px 60px -24px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  --inv-bg: #14352c;
+  --inv-text: #f7f2e8;
+  --inv-dim: #b5cabd;
+  --inv-link: #7fe0bf;
 }
 
-html[data-theme='light'] {
-  --bg: #ffffff;
-  --bg-alt: #f4f4f6;
-  --text: #14151a;
-  --text-dim: #62646d;
-  --border: #e3e4e8;
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
 }
 
 * {
@@ -38,8 +68,17 @@ body {
 }
 
 h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  /* Long German compounds must never push the page wider than the screen. */
+  overflow-wrap: anywhere;
+}
+
+h1,
 h2 {
-  font-weight: 800;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   color: var(--text);
   margin: 0;
 }

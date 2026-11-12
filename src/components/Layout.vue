@@ -88,34 +88,41 @@ const year = new Date().getFullYear()
 <template>
   <div class="page">
     <header class="header">
-      <RouterLink :to="localePath('/')" class="brand">
-        <LogoMark class="brand-mark" aria-hidden="true" />
-        <span class="brand-name">Deuy Digital</span>
-      </RouterLink>
-      <div class="header-controls">
-        <ThemeToggle :theme="theme" @change="setTheme" />
-        <nav class="lang-switch" aria-label="Language">
-          <RouterLink
-            :to="switchPath('en')"
-            hreflang="en"
-            lang="en"
-            :class="{ active: language === 'en' }"
-            :aria-current="language === 'en' ? 'true' : undefined"
-            @click="rememberLanguage('en')"
-          >
-            EN
-          </RouterLink>
-          <RouterLink
-            :to="switchPath('de')"
-            hreflang="de"
-            lang="de"
-            :class="{ active: language === 'de' }"
-            :aria-current="language === 'de' ? 'true' : undefined"
-            @click="rememberLanguage('de')"
-          >
-            DE
-          </RouterLink>
+      <div class="header-inner">
+        <RouterLink :to="localePath('/')" class="brand">
+          <LogoMark class="brand-mark" aria-hidden="true" />
+          <span class="brand-name">Deuy Digital</span>
+        </RouterLink>
+        <nav class="header-nav" aria-label="Main">
+          <RouterLink :to="{ path: localePath('/'), hash: '#services' }">{{ t('nav.services') }}</RouterLink>
+          <RouterLink :to="{ path: localePath('/'), hash: '#work' }">{{ t('nav.work') }}</RouterLink>
+          <RouterLink :to="{ path: localePath('/'), hash: '#contact' }">{{ t('nav.contact') }}</RouterLink>
         </nav>
+        <div class="header-controls">
+          <ThemeToggle :theme="theme" @change="setTheme" />
+          <nav class="lang-switch" aria-label="Language">
+            <RouterLink
+              :to="switchPath('en')"
+              hreflang="en"
+              lang="en"
+              :class="{ active: language === 'en' }"
+              :aria-current="language === 'en' ? 'true' : undefined"
+              @click="rememberLanguage('en')"
+            >
+              EN
+            </RouterLink>
+            <RouterLink
+              :to="switchPath('de')"
+              hreflang="de"
+              lang="de"
+              :class="{ active: language === 'de' }"
+              :aria-current="language === 'de' ? 'true' : undefined"
+              @click="rememberLanguage('de')"
+            >
+              DE
+            </RouterLink>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -124,25 +131,39 @@ const year = new Date().getFullYear()
     </main>
 
     <footer class="footer">
-      <nav class="footer-nav footer-services" :aria-label="t('services.heading')">
-        <RouterLink v-for="service in SERVICES" :key="service.id" :to="localePath(service.path)">
-          {{ t(`services.items.${service.id}.name`) }}
-        </RouterLink>
-      </nav>
-      <address class="footer-address">
-        Deuy Digital UG (haftungsbeschränkt) &middot; Im Wannental 23, 74074 Heilbronn
-        <br />
-        <a :href="`tel:${PHONE.replace(/ /g, '')}`">{{ PHONE }}</a>
-        &middot;
-        <a :href="`mailto:${EMAIL}`">{{ EMAIL }}</a>
-      </address>
-      <p>&copy; {{ year }} Deuy Digital UG (haftungsbeschränkt) &mdash; {{ t('footer.rights') }}</p>
-      <nav class="footer-nav" aria-label="Legal">
-        <RouterLink :to="localePath('/impressum')">{{ t('footer.impressum') }}</RouterLink>
-        <RouterLink :to="localePath('/datenschutz')">{{ t('footer.datenschutz') }}</RouterLink>
-        <RouterLink :to="localePath('/agb')">{{ t('footer.agb') }}</RouterLink>
-        <RouterLink :to="localePath('/cookie-einstellungen')">{{ t('footer.cookies') }}</RouterLink>
-      </nav>
+      <div class="footer-inner">
+        <div class="footer-cols">
+          <div class="footer-brand">
+            <RouterLink :to="localePath('/')" class="brand">
+              <LogoMark class="brand-mark" aria-hidden="true" />
+              <span class="brand-name">Deuy Digital</span>
+            </RouterLink>
+            <address class="footer-address">
+              Im Wannental 23, 74074 Heilbronn
+              <br />
+              <a :href="`tel:${PHONE.replace(/ /g, '')}`">{{ PHONE }}</a>
+              <br />
+              <a :href="`mailto:${EMAIL}`">{{ EMAIL }}</a>
+            </address>
+          </div>
+          <nav class="footer-nav" :aria-label="t('services.heading')">
+            <p class="footer-heading">{{ t('services.heading') }}</p>
+            <RouterLink v-for="service in SERVICES" :key="service.id" :to="localePath(service.path)">
+              {{ t(`services.items.${service.id}.name`) }}
+            </RouterLink>
+          </nav>
+          <nav class="footer-nav" aria-label="Legal">
+            <p class="footer-heading">Deuy Digital</p>
+            <RouterLink :to="localePath('/impressum')">{{ t('footer.impressum') }}</RouterLink>
+            <RouterLink :to="localePath('/datenschutz')">{{ t('footer.datenschutz') }}</RouterLink>
+            <RouterLink :to="localePath('/agb')">{{ t('footer.agb') }}</RouterLink>
+            <RouterLink :to="localePath('/cookie-einstellungen')">{{ t('footer.cookies') }}</RouterLink>
+          </nav>
+        </div>
+        <p class="footer-legal">
+          &copy; {{ year }} Deuy Digital UG (haftungsbeschränkt). {{ t('footer.rights') }}
+        </p>
+      </div>
     </footer>
   </div>
 </template>

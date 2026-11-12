@@ -4,7 +4,9 @@ import { useHead } from '@unhead/vue'
 import { useTranslation } from 'i18next-vue'
 import { useLocale } from '../composables/useLocale'
 import { SITE_URL, useSEO } from '../composables/useSEO'
+import ContactBlock from '../components/ContactBlock.vue'
 import Reveal from '../components/Reveal.vue'
+import ServiceVisual from '../components/ServiceVisual.vue'
 import ServiceIcon from '../components/icons/ServiceIcon.vue'
 import { SERVICES, type ServiceId } from '../services'
 
@@ -59,39 +61,53 @@ useHead(
 
 <template>
   <article class="case">
-    <RouterLink :to="localePath('/')" class="legal-back">
-      {{ t('work.back') }}
-    </RouterLink>
-
-    <header class="case-header">
-      <h1>{{ t(`${base}.title`) }}</h1>
-      <p class="case-subtitle">{{ t(`${base}.subtitle`) }}</p>
+    <header class="page-hero page-hero-split">
+      <div class="page-hero-text">
+        <RouterLink :to="localePath('/')" class="legal-back">
+          {{ t('work.back') }}
+        </RouterLink>
+        <p class="eyebrow">{{ t(`${base}.name`) }}</p>
+        <h1>{{ t(`${base}.title`) }}</h1>
+        <p class="case-subtitle">{{ t(`${base}.subtitle`) }}</p>
+        <a class="cta" :href="`mailto:${EMAIL}`">{{ t('services.cta.button') }}</a>
+      </div>
+      <div class="page-hero-visual">
+        <ServiceVisual :id="id" />
+      </div>
     </header>
 
-    <Reveal v-for="section in sections" :key="section.heading">
-      <h2>{{ section.heading }}</h2>
-      <p v-for="(paragraph, i) in section.paragraphs" :key="i">{{ paragraph }}</p>
-      <ul v-if="section.items">
-        <li v-for="item in section.items" :key="item">{{ item }}</li>
-      </ul>
+    <div class="rows">
+      <Reveal v-for="section in sections" :key="section.heading" class="row">
+        <h2>{{ section.heading }}</h2>
+        <div class="row-body">
+          <p v-for="(paragraph, i) in section.paragraphs" :key="i">{{ paragraph }}</p>
+          <ul v-if="section.items">
+            <li v-for="item in section.items" :key="item">{{ item }}</li>
+          </ul>
+        </div>
+      </Reveal>
+    </div>
+
+    <Reveal class="reveal-scale">
+      <div v-if="referenceUrl" class="reference">
+        <h2>{{ t(`${base}.reference.heading`) }}</h2>
+        <p>{{ t(`${base}.reference.body`) }}</p>
+        <a class="link-more" :href="referenceUrl" target="_blank" rel="noopener">
+          {{ t(`${base}.reference.link`) }}
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+      <div v-else class="reference">
+        <h2>{{ t('services.reference.heading') }}</h2>
+        <p>{{ t('services.reference.body') }}</p>
+        <RouterLink class="link-more" :to="localePath('/work/seel-schreibwaren')">
+          {{ t('services.reference.link') }}
+          <span aria-hidden="true">›</span>
+        </RouterLink>
+      </div>
     </Reveal>
 
-    <Reveal v-if="referenceUrl">
-      <h2>{{ t(`${base}.reference.heading`) }}</h2>
-      <p>{{ t(`${base}.reference.body`) }}</p>
-      <a class="case-visit" :href="referenceUrl" target="_blank" rel="noopener">
-        {{ t(`${base}.reference.link`) }} ↗
-      </a>
-    </Reveal>
-    <Reveal v-else>
-      <h2>{{ t('services.reference.heading') }}</h2>
-      <p>{{ t('services.reference.body') }}</p>
-      <RouterLink class="case-visit" :to="localePath('/work/seel-schreibwaren')">
-        {{ t('services.reference.link') }} →
-      </RouterLink>
-    </Reveal>
-
-    <Reveal>
+    <Reveal class="more">
       <h2>{{ t('services.otherHeading') }}</h2>
       <div class="services-grid">
         <RouterLink
@@ -105,18 +121,12 @@ useHead(
           <p>{{ t(`services.items.${other.id}.summary`) }}</p>
           <span class="service-more">
             {{ t('services.more') }}
-            <span class="service-arrow" aria-hidden="true">→</span>
+            <span class="service-arrow" aria-hidden="true">›</span>
           </span>
         </RouterLink>
       </div>
     </Reveal>
-
-    <Reveal>
-      <div class="case-cta">
-        <h2>{{ t('services.cta.heading') }}</h2>
-        <p>{{ t('services.cta.body') }}</p>
-        <a class="cta" :href="`mailto:${EMAIL}`">{{ t('services.cta.button') }}</a>
-      </div>
-    </Reveal>
   </article>
+
+  <ContactBlock :heading="t('services.cta.heading')" :body="t('services.cta.body')" />
 </template>
