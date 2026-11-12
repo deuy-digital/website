@@ -91,7 +91,7 @@ const year = new Date().getFullYear()
       <div class="header-inner">
         <RouterLink :to="localePath('/')" class="brand">
           <LogoMark class="brand-mark" aria-hidden="true" />
-          <span class="brand-name">Deuy Digital</span>
+          <span class="brand-name">Deuy Digital UG</span>
         </RouterLink>
         <nav class="header-nav" aria-label="Main">
           <RouterLink :to="{ path: localePath('/'), hash: '#services' }">{{ t('nav.services') }}</RouterLink>
@@ -136,7 +136,7 @@ const year = new Date().getFullYear()
           <div class="footer-brand">
             <RouterLink :to="localePath('/')" class="brand">
               <LogoMark class="brand-mark" aria-hidden="true" />
-              <span class="brand-name">Deuy Digital</span>
+              <span class="brand-name">Deuy Digital UG</span>
             </RouterLink>
             <address class="footer-address">
               Im Wannental 23, 74074 Heilbronn
